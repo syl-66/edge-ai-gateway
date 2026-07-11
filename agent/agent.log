@@ -1,0 +1,1368 @@
+00:08:53 [agent.core        ] INFO  Agent 初始化完成, model=deepseek-chat
+00:08:53 [agent.automation  ] INFO  规则文件不存在, 从空开始
+00:08:53 [agent.mqtt        ] INFO  注册事件处理器: sensor.report
+00:08:53 [agent.mqtt        ] INFO  注册事件处理器: tool.result
+00:08:53 [agent.mqtt        ] INFO  注册事件处理器: heartbeat
+00:08:53 [agent.mqtt        ] INFO  注册事件处理器: device.register
+00:08:53 [agent.mqtt        ] INFO  连接 MQTT Broker: 192.168.8.176:1883
+00:08:53 [agent.mqtt        ] INFO  MQTT 连接成功
+00:08:53 [agent.mqtt        ] INFO  订阅: edge/+/sensor/report
+00:08:53 [agent.mqtt        ] INFO  订阅: edge/+/actuator/status
+00:08:53 [agent.mqtt        ] INFO  订阅: edge/+/tool/result
+00:08:53 [agent.mqtt        ] INFO  订阅: edge/+/heartbeat
+00:08:53 [agent.mqtt        ] INFO  MQTT 已连接
+00:08:53 [agent.main        ] INFO  Agent 初始化完成
+00:08:53 [agent.main        ] INFO  自动化引擎启动 (间隔=10s)
+00:08:53 [agent.main        ] INFO  主动巡检启动 (间隔=300s)
+00:08:53 [agent.main        ] INFO  Web Dashboard: http://0.0.0.0:5000
+00:08:53 [werkzeug          ] INFO  [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.8.176:5000
+00:08:53 [werkzeug          ] INFO  [33mPress CTRL+C to quit[0m
+00:09:50 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:09:50] "GET / HTTP/1.1" 200 -
+00:09:51 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:09:51] "GET /socket.io/?EIO=4&transport=polling&t=PzHyJis HTTP/1.1" 200 -
+00:09:51 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:09:51] "GET /api/rules HTTP/1.1" 200 -
+00:09:51 [agent.web         ] INFO  WebSocket 客户端连接
+00:09:51 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:09:51] "POST /socket.io/?EIO=4&transport=polling&t=PzHyJiy&sid=oRofyEQtsrwXfAlJAAAA HTTP/1.1" 200 -
+00:09:51 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:09:51] "GET /socket.io/?EIO=4&transport=polling&t=PzHyJiz&sid=oRofyEQtsrwXfAlJAAAA HTTP/1.1" 200 -
+00:09:51 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:09:51] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+00:09:51 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:09:51] "GET /socket.io/?EIO=4&transport=polling&t=PzHyJj2&sid=oRofyEQtsrwXfAlJAAAA HTTP/1.1" 200 -
+00:09:56 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:09:56] "GET /api/status HTTP/1.1" 200 -
+00:10:01 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:10:01] "GET /api/status HTTP/1.1" 200 -
+00:10:06 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:10:06] "GET /api/status HTTP/1.1" 200 -
+00:10:11 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:10:11] "GET /api/status HTTP/1.1" 200 -
+00:10:17 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:10:17] "GET /api/status HTTP/1.1" 200 -
+00:10:22 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:10:22] "GET /api/status HTTP/1.1" 200 -
+00:10:22 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:10:22] "GET /api/rules HTTP/1.1" 200 -
+00:10:26 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:10:26] "GET /api/status HTTP/1.1" 200 -
+00:10:31 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:10:31] "GET /api/status HTTP/1.1" 200 -
+00:10:37 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:10:37] "GET /api/status HTTP/1.1" 200 -
+00:10:42 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:10:42] "GET /api/status HTTP/1.1" 200 -
+00:10:46 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:10:46] "GET /api/status HTTP/1.1" 200 -
+00:10:52 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:10:52] "GET /api/status HTTP/1.1" 200 -
+00:10:52 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:10:52] "GET /api/rules HTTP/1.1" 200 -
+00:10:57 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:10:57] "GET /api/status HTTP/1.1" 200 -
+00:11:02 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:11:02] "GET /api/status HTTP/1.1" 200 -
+00:11:07 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:11:07] "GET /api/status HTTP/1.1" 200 -
+00:11:12 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:11:12] "GET /api/status HTTP/1.1" 200 -
+00:11:17 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:11:17] "GET /api/status HTTP/1.1" 200 -
+00:11:22 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:11:22] "GET /api/status HTTP/1.1" 200 -
+00:11:22 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:11:22] "GET /api/rules HTTP/1.1" 200 -
+00:11:27 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:11:27] "GET /api/status HTTP/1.1" 200 -
+00:11:32 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:11:32] "GET /api/status HTTP/1.1" 200 -
+00:11:37 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:11:37] "GET /api/status HTTP/1.1" 200 -
+00:11:42 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:11:42] "GET /api/status HTTP/1.1" 200 -
+00:11:47 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:11:47] "GET /api/status HTTP/1.1" 200 -
+00:11:52 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:11:52] "GET /api/rules HTTP/1.1" 200 -
+00:12:22 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:12:22] "GET /api/rules HTTP/1.1" 200 -
+00:12:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:12:40] "GET /api/status HTTP/1.1" 200 -
+00:12:52 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:12:52] "GET /api/rules HTTP/1.1" 200 -
+00:13:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:13:40] "GET /api/status HTTP/1.1" 200 -
+00:13:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:13:40] "GET /api/rules HTTP/1.1" 200 -
+00:14:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:14:40] "GET /api/status HTTP/1.1" 200 -
+00:14:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:14:40] "GET /api/rules HTTP/1.1" 200 -
+00:15:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:15:40] "GET /api/status HTTP/1.1" 200 -
+00:15:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:15:40] "GET /api/rules HTTP/1.1" 200 -
+00:16:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:16:40] "GET /api/status HTTP/1.1" 200 -
+00:16:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:16:40] "GET /api/rules HTTP/1.1" 200 -
+00:16:49 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:16:49] "GET /api/status HTTP/1.1" 200 -
+00:16:50 [agent.web         ] INFO  WebSocket 客户端断开
+00:16:50 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:16:50] "GET /socket.io/?EIO=4&transport=websocket&sid=oRofyEQtsrwXfAlJAAAA HTTP/1.1" 200 -
+00:16:50 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:16:50] "GET / HTTP/1.1" 200 -
+00:16:50 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:16:50] "GET /socket.io/?EIO=4&transport=polling&t=PzHzw0h HTTP/1.1" 200 -
+00:16:50 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:16:50] "GET /api/rules HTTP/1.1" 200 -
+00:16:50 [agent.web         ] INFO  WebSocket 客户端连接
+00:16:50 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:16:50] "POST /socket.io/?EIO=4&transport=polling&t=PzHzw0n&sid=Nf7UCwreXChXS1KzAAAC HTTP/1.1" 200 -
+00:16:50 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:16:50] "GET /socket.io/?EIO=4&transport=polling&t=PzHzw0o&sid=Nf7UCwreXChXS1KzAAAC HTTP/1.1" 200 -
+00:16:50 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:16:50] "GET /socket.io/?EIO=4&transport=polling&t=PzHzw0v&sid=Nf7UCwreXChXS1KzAAAC HTTP/1.1" 200 -
+00:16:56 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:16:56] "GET /api/status HTTP/1.1" 200 -
+00:17:01 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:17:01] "GET /api/status HTTP/1.1" 200 -
+00:17:06 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:17:06] "GET /api/status HTTP/1.1" 200 -
+00:17:11 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:17:11] "GET /api/status HTTP/1.1" 200 -
+00:17:16 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:17:16] "GET /api/status HTTP/1.1" 200 -
+00:17:21 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:17:21] "GET /api/status HTTP/1.1" 200 -
+00:17:21 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:17:21] "GET /api/rules HTTP/1.1" 200 -
+00:17:26 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:17:26] "GET /api/status HTTP/1.1" 200 -
+00:17:31 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:17:31] "GET /api/status HTTP/1.1" 200 -
+00:17:36 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:17:36] "GET /api/status HTTP/1.1" 200 -
+00:17:41 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:17:41] "GET /api/status HTTP/1.1" 200 -
+00:17:46 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:17:46] "GET /api/status HTTP/1.1" 200 -
+00:17:51 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:17:51] "GET /api/status HTTP/1.1" 200 -
+00:17:51 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:17:51] "GET /api/rules HTTP/1.1" 200 -
+00:18:21 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:18:21] "GET /api/rules HTTP/1.1" 200 -
+00:18:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:18:40] "GET /api/status HTTP/1.1" 200 -
+00:18:51 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:18:51] "GET /api/rules HTTP/1.1" 200 -
+00:19:21 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:19:21] "GET /api/rules HTTP/1.1" 200 -
+00:19:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:19:40] "GET /api/status HTTP/1.1" 200 -
+00:19:51 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:19:51] "GET /api/rules HTTP/1.1" 200 -
+00:20:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:20:40] "GET /api/status HTTP/1.1" 200 -
+00:20:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:20:40] "GET /api/rules HTTP/1.1" 200 -
+00:21:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:21:40] "GET /api/status HTTP/1.1" 200 -
+00:21:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:21:40] "GET /api/rules HTTP/1.1" 200 -
+00:22:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:22:40] "GET /api/status HTTP/1.1" 200 -
+00:22:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:22:40] "GET /api/rules HTTP/1.1" 200 -
+00:23:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:23:40] "GET /api/status HTTP/1.1" 200 -
+00:23:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:23:40] "GET /api/rules HTTP/1.1" 200 -
+00:24:20 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:24:20] "GET /api/status HTTP/1.1" 200 -
+00:24:20 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:24:20] "GET /api/rules HTTP/1.1" 200 -
+00:24:20 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:24:20] "GET /api/status HTTP/1.1" 200 -
+00:24:25 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:24:25] "GET /api/status HTTP/1.1" 200 -
+00:24:28 [agent.web         ] INFO  Web Chat: 查看温度...
+00:24:29 [httpx             ] INFO  HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 401 Authorization Required"
+00:24:29 [httpx             ] INFO  HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 401 Authorization Required"
+00:24:29 [agent.web         ] ERROR Chat 异常: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****KEY} is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+Traceback (most recent call last):
+  File "C:\Users\28933\Desktop\study_linux\work_program\edge-ai-agent-gateway\agent\web\dashboard.py", line 119, in api_chat
+    reply = _agent.chat(user_message)
+  File "C:\Users\28933\Desktop\study_linux\work_program\edge-ai-agent-gateway\agent\agent_core.py", line 286, in chat
+    response = self._call_llm(temperature)
+  File "C:\Users\28933\Desktop\study_linux\work_program\edge-ai-agent-gateway\agent\agent_core.py", line 341, in _call_llm
+    return self.llm.chat.completions.create(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        model=self.model,
+        ^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        max_tokens=self.max_tokens
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "E:\anacondamini\Lib\site-packages\openai\_utils\_utils.py", line 298, in wrapper
+    return func(*args, **kwargs)
+  File "E:\anacondamini\Lib\site-packages\openai\resources\chat\completions\completions.py", line 1281, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/chat/completions",
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<53 lines>...
+        stream_cls=Stream[ChatCompletionChunk],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "E:\anacondamini\Lib\site-packages\openai\_base_client.py", line 1332, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\anacondamini\Lib\site-packages\openai\_base_client.py", line 1105, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****KEY} is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+00:24:29 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:24:29] "[35m[1mPOST /api/chat HTTP/1.1[0m" 500 -
+00:24:30 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:24:30] "GET /api/status HTTP/1.1" 200 -
+00:24:35 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:24:35] "GET /api/status HTTP/1.1" 200 -
+00:24:41 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:24:41] "GET /api/status HTTP/1.1" 200 -
+00:24:46 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:24:46] "GET /api/status HTTP/1.1" 200 -
+00:24:51 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:24:51] "GET /api/status HTTP/1.1" 200 -
+00:24:51 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:24:51] "GET /api/rules HTTP/1.1" 200 -
+00:24:56 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:24:56] "GET /api/status HTTP/1.1" 200 -
+00:25:01 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:25:01] "GET /api/status HTTP/1.1" 200 -
+00:25:06 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:25:06] "GET /api/status HTTP/1.1" 200 -
+00:25:11 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:25:11] "GET /api/status HTTP/1.1" 200 -
+00:25:16 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:25:16] "GET /api/status HTTP/1.1" 200 -
+00:25:21 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:25:21] "GET /api/status HTTP/1.1" 200 -
+00:25:21 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:25:21] "GET /api/rules HTTP/1.1" 200 -
+00:25:26 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:25:26] "GET /api/status HTTP/1.1" 200 -
+00:25:31 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:25:31] "GET /api/status HTTP/1.1" 200 -
+00:25:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:25:40] "GET /api/status HTTP/1.1" 200 -
+00:26:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:26:40] "GET /api/status HTTP/1.1" 200 -
+00:26:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:26:40] "GET /api/rules HTTP/1.1" 200 -
+00:27:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:27:40] "GET /api/status HTTP/1.1" 200 -
+00:27:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:27:40] "GET /api/rules HTTP/1.1" 200 -
+00:28:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:28:40] "GET /api/status HTTP/1.1" 200 -
+00:28:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:28:40] "GET /api/rules HTTP/1.1" 200 -
+00:29:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:29:40] "GET /api/status HTTP/1.1" 200 -
+00:29:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:29:40] "GET /api/rules HTTP/1.1" 200 -
+00:30:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:30:40] "GET /api/status HTTP/1.1" 200 -
+00:30:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:30:40] "GET /api/rules HTTP/1.1" 200 -
+00:31:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:31:40] "GET /api/status HTTP/1.1" 200 -
+00:31:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:31:40] "GET /api/rules HTTP/1.1" 200 -
+00:32:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:32:40] "GET /api/status HTTP/1.1" 200 -
+00:32:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:32:40] "GET /api/rules HTTP/1.1" 200 -
+00:33:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:33:40] "GET /api/status HTTP/1.1" 200 -
+00:33:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:33:40] "GET /api/rules HTTP/1.1" 200 -
+00:34:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:34:40] "GET /api/status HTTP/1.1" 200 -
+00:34:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:34:40] "GET /api/rules HTTP/1.1" 200 -
+00:35:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:35:40] "GET /api/status HTTP/1.1" 200 -
+00:35:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:35:40] "GET /api/rules HTTP/1.1" 200 -
+00:36:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:36:40] "GET /api/status HTTP/1.1" 200 -
+00:36:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:36:40] "GET /api/rules HTTP/1.1" 200 -
+00:37:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:37:40] "GET /api/status HTTP/1.1" 200 -
+00:37:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:37:40] "GET /api/rules HTTP/1.1" 200 -
+00:38:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:38:40] "GET /api/status HTTP/1.1" 200 -
+00:38:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:38:40] "GET /api/rules HTTP/1.1" 200 -
+00:39:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:39:40] "GET /api/status HTTP/1.1" 200 -
+00:39:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:39:40] "GET /api/rules HTTP/1.1" 200 -
+00:40:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:40:40] "GET /api/status HTTP/1.1" 200 -
+00:40:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:40:40] "GET /api/rules HTTP/1.1" 200 -
+00:41:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:41:40] "GET /api/status HTTP/1.1" 200 -
+00:41:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:41:40] "GET /api/rules HTTP/1.1" 200 -
+00:42:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:42:40] "GET /api/status HTTP/1.1" 200 -
+00:42:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:42:40] "GET /api/rules HTTP/1.1" 200 -
+00:43:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:43:40] "GET /api/status HTTP/1.1" 200 -
+00:43:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:43:40] "GET /api/rules HTTP/1.1" 200 -
+00:44:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:44:40] "GET /api/status HTTP/1.1" 200 -
+00:44:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:44:40] "GET /api/rules HTTP/1.1" 200 -
+00:45:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:45:40] "GET /api/status HTTP/1.1" 200 -
+00:45:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:45:40] "GET /api/rules HTTP/1.1" 200 -
+00:46:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:46:40] "GET /api/status HTTP/1.1" 200 -
+00:46:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:46:40] "GET /api/rules HTTP/1.1" 200 -
+00:47:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:47:40] "GET /api/status HTTP/1.1" 200 -
+00:47:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:47:40] "GET /api/rules HTTP/1.1" 200 -
+00:48:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:48:40] "GET /api/status HTTP/1.1" 200 -
+00:48:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:48:40] "GET /api/rules HTTP/1.1" 200 -
+00:49:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:49:40] "GET /api/status HTTP/1.1" 200 -
+00:49:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:49:40] "GET /api/rules HTTP/1.1" 200 -
+00:50:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:50:40] "GET /api/status HTTP/1.1" 200 -
+00:50:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:50:40] "GET /api/rules HTTP/1.1" 200 -
+00:51:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:51:40] "GET /api/status HTTP/1.1" 200 -
+00:51:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:51:40] "GET /api/rules HTTP/1.1" 200 -
+00:52:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:52:40] "GET /api/status HTTP/1.1" 200 -
+00:52:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:52:40] "GET /api/rules HTTP/1.1" 200 -
+00:53:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:53:40] "GET /api/status HTTP/1.1" 200 -
+00:53:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:53:40] "GET /api/rules HTTP/1.1" 200 -
+00:54:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:54:40] "GET /api/status HTTP/1.1" 200 -
+00:54:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:54:40] "GET /api/rules HTTP/1.1" 200 -
+00:55:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:55:40] "GET /api/status HTTP/1.1" 200 -
+00:55:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:55:40] "GET /api/rules HTTP/1.1" 200 -
+00:56:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:56:40] "GET /api/status HTTP/1.1" 200 -
+00:56:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:56:40] "GET /api/rules HTTP/1.1" 200 -
+00:57:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:57:40] "GET /api/status HTTP/1.1" 200 -
+00:57:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:57:40] "GET /api/rules HTTP/1.1" 200 -
+00:58:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:58:40] "GET /api/status HTTP/1.1" 200 -
+00:58:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:58:40] "GET /api/rules HTTP/1.1" 200 -
+00:59:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:59:40] "GET /api/status HTTP/1.1" 200 -
+00:59:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 00:59:40] "GET /api/rules HTTP/1.1" 200 -
+01:00:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:00:40] "GET /api/status HTTP/1.1" 200 -
+01:00:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:00:40] "GET /api/rules HTTP/1.1" 200 -
+01:01:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:01:40] "GET /api/status HTTP/1.1" 200 -
+01:01:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:01:40] "GET /api/rules HTTP/1.1" 200 -
+01:02:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:02:40] "GET /api/status HTTP/1.1" 200 -
+01:02:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:02:40] "GET /api/rules HTTP/1.1" 200 -
+01:03:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:03:40] "GET /api/status HTTP/1.1" 200 -
+01:03:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:03:40] "GET /api/rules HTTP/1.1" 200 -
+01:04:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:04:40] "GET /api/status HTTP/1.1" 200 -
+01:04:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:04:40] "GET /api/rules HTTP/1.1" 200 -
+01:05:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:05:40] "GET /api/status HTTP/1.1" 200 -
+01:05:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:05:40] "GET /api/rules HTTP/1.1" 200 -
+01:06:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:06:40] "GET /api/status HTTP/1.1" 200 -
+01:06:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:06:40] "GET /api/rules HTTP/1.1" 200 -
+01:07:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:07:40] "GET /api/status HTTP/1.1" 200 -
+01:07:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:07:40] "GET /api/rules HTTP/1.1" 200 -
+01:08:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:08:40] "GET /api/status HTTP/1.1" 200 -
+01:08:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:08:40] "GET /api/rules HTTP/1.1" 200 -
+01:09:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:09:40] "GET /api/status HTTP/1.1" 200 -
+01:09:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:09:40] "GET /api/rules HTTP/1.1" 200 -
+01:10:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:10:40] "GET /api/status HTTP/1.1" 200 -
+01:10:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:10:40] "GET /api/rules HTTP/1.1" 200 -
+01:11:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:11:40] "GET /api/status HTTP/1.1" 200 -
+01:11:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:11:40] "GET /api/rules HTTP/1.1" 200 -
+01:12:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:12:40] "GET /api/status HTTP/1.1" 200 -
+01:12:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:12:40] "GET /api/rules HTTP/1.1" 200 -
+01:13:05 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:13:05] "GET /api/status HTTP/1.1" 200 -
+01:13:05 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:13:05] "GET /api/rules HTTP/1.1" 200 -
+01:13:05 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:13:05] "GET /api/status HTTP/1.1" 200 -
+01:13:06 [agent.web         ] INFO  WebSocket 客户端断开
+01:13:06 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:13:06] "GET /socket.io/?EIO=4&transport=websocket&sid=Nf7UCwreXChXS1KzAAAC HTTP/1.1" 200 -
+01:13:06 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:13:06] "GET / HTTP/1.1" 200 -
+01:13:06 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:13:06] "GET /socket.io/?EIO=4&transport=polling&t=PzIAo8q HTTP/1.1" 200 -
+01:13:06 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:13:06] "GET /api/rules HTTP/1.1" 200 -
+01:13:06 [agent.web         ] INFO  WebSocket 客户端连接
+01:13:06 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:13:06] "POST /socket.io/?EIO=4&transport=polling&t=PzIAo8u&sid=Ne37pYyxzR-tn-kUAAAE HTTP/1.1" 200 -
+01:13:06 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:13:06] "GET /socket.io/?EIO=4&transport=polling&t=PzIAo8v&sid=Ne37pYyxzR-tn-kUAAAE HTTP/1.1" 200 -
+01:13:06 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:13:06] "GET /socket.io/?EIO=4&transport=polling&t=PzIAo8-&sid=Ne37pYyxzR-tn-kUAAAE HTTP/1.1" 200 -
+01:13:11 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:13:11] "GET /api/status HTTP/1.1" 200 -
+01:13:16 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:13:16] "GET /api/status HTTP/1.1" 200 -
+01:13:17 [agent.web         ] INFO  WebSocket 客户端断开
+01:13:17 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:13:17] "GET /socket.io/?EIO=4&transport=websocket&sid=Ne37pYyxzR-tn-kUAAAE HTTP/1.1" 200 -
+01:13:17 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:13:17] "GET / HTTP/1.1" 200 -
+01:13:17 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:13:17] "GET /socket.io/?EIO=4&transport=polling&t=PzIAqtz HTTP/1.1" 200 -
+01:13:17 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:13:17] "GET /api/rules HTTP/1.1" 200 -
+01:13:17 [agent.web         ] INFO  WebSocket 客户端连接
+01:13:17 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:13:17] "POST /socket.io/?EIO=4&transport=polling&t=PzIAqu1&sid=Ue6dSlOoMu-5FSX6AAAG HTTP/1.1" 200 -
+01:13:17 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:13:17] "GET /socket.io/?EIO=4&transport=polling&t=PzIAqu1.0&sid=Ue6dSlOoMu-5FSX6AAAG HTTP/1.1" 200 -
+01:13:17 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:13:17] "GET /socket.io/?EIO=4&transport=polling&t=PzIAqu6&sid=Ue6dSlOoMu-5FSX6AAAG HTTP/1.1" 200 -
+01:13:22 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:13:22] "GET /api/status HTTP/1.1" 200 -
+01:13:27 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:13:27] "GET /api/status HTTP/1.1" 200 -
+01:13:32 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:13:32] "GET /api/status HTTP/1.1" 200 -
+01:13:37 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:13:37] "GET /api/status HTTP/1.1" 200 -
+01:13:43 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:13:43] "GET /api/status HTTP/1.1" 200 -
+01:13:47 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:13:47] "GET /api/status HTTP/1.1" 200 -
+01:13:47 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:13:47] "GET /api/rules HTTP/1.1" 200 -
+01:13:52 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:13:52] "GET /api/status HTTP/1.1" 200 -
+01:13:58 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:13:58] "GET /api/status HTTP/1.1" 200 -
+01:14:03 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:14:03] "GET /api/status HTTP/1.1" 200 -
+01:14:08 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:14:08] "GET /api/status HTTP/1.1" 200 -
+01:14:13 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:14:13] "GET /api/status HTTP/1.1" 200 -
+01:14:18 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:14:18] "GET /api/status HTTP/1.1" 200 -
+01:14:18 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:14:18] "GET /api/rules HTTP/1.1" 200 -
+01:14:23 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:14:23] "GET /api/status HTTP/1.1" 200 -
+01:14:28 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:14:28] "GET /api/status HTTP/1.1" 200 -
+01:14:33 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:14:33] "GET /api/status HTTP/1.1" 200 -
+01:14:38 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:14:38] "GET /api/status HTTP/1.1" 200 -
+01:14:43 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:14:43] "GET /api/status HTTP/1.1" 200 -
+01:14:48 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:14:48] "GET /api/status HTTP/1.1" 200 -
+01:14:48 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:14:48] "GET /api/rules HTTP/1.1" 200 -
+01:14:53 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:14:53] "GET /api/status HTTP/1.1" 200 -
+01:14:57 [agent.mqtt        ] WARNING 无效 JSON: b'{"status":"off'
+01:15:18 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:15:18] "GET /api/rules HTTP/1.1" 200 -
+01:15:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:15:40] "GET /api/status HTTP/1.1" 200 -
+01:15:48 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:15:48] "GET /api/rules HTTP/1.1" 200 -
+01:16:17 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:16:17] "GET /api/status HTTP/1.1" 200 -
+01:16:17 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:16:17] "GET /api/status HTTP/1.1" 200 -
+01:16:17 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:16:17] "GET /api/rules HTTP/1.1" 200 -
+01:16:19 [agent.web         ] INFO  WebSocket 客户端断开
+01:16:19 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:16:19] "GET /socket.io/?EIO=4&transport=websocket&sid=Ue6dSlOoMu-5FSX6AAAG HTTP/1.1" 200 -
+01:16:19 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:16:19] "GET / HTTP/1.1" 200 -
+01:16:19 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:16:19] "GET /socket.io/?EIO=4&transport=polling&t=PzIBXFA HTTP/1.1" 200 -
+01:16:19 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:16:19] "GET /api/rules HTTP/1.1" 200 -
+01:16:19 [agent.web         ] INFO  WebSocket 客户端连接
+01:16:19 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:16:19] "POST /socket.io/?EIO=4&transport=polling&t=PzIBXFG&sid=aZuo1k0kWMnJNEH3AAAI HTTP/1.1" 200 -
+01:16:19 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:16:19] "GET /socket.io/?EIO=4&transport=polling&t=PzIBXFG.0&sid=aZuo1k0kWMnJNEH3AAAI HTTP/1.1" 200 -
+01:16:19 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:16:19] "GET /socket.io/?EIO=4&transport=polling&t=PzIBXFK&sid=aZuo1k0kWMnJNEH3AAAI HTTP/1.1" 200 -
+01:16:24 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:16:24] "GET /api/status HTTP/1.1" 200 -
+01:16:30 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:16:30] "GET /api/status HTTP/1.1" 200 -
+01:16:35 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:16:35] "GET /api/status HTTP/1.1" 200 -
+01:16:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:16:40] "GET /api/status HTTP/1.1" 200 -
+01:16:44 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:16:44] "GET /api/status HTTP/1.1" 200 -
+01:16:50 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:16:50] "GET /api/status HTTP/1.1" 200 -
+01:16:50 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:16:50] "GET /api/rules HTTP/1.1" 200 -
+01:16:54 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:16:54] "GET /api/status HTTP/1.1" 200 -
+01:16:59 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:16:59] "GET /api/status HTTP/1.1" 200 -
+01:17:04 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:17:04] "GET /api/status HTTP/1.1" 200 -
+01:17:09 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:17:09] "GET /api/status HTTP/1.1" 200 -
+01:17:14 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:17:14] "GET /api/status HTTP/1.1" 200 -
+01:17:19 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:17:19] "GET /api/status HTTP/1.1" 200 -
+01:17:19 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:17:19] "GET /api/rules HTTP/1.1" 200 -
+01:17:24 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:17:24] "GET /api/status HTTP/1.1" 200 -
+01:17:29 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:17:29] "GET /api/status HTTP/1.1" 200 -
+01:17:34 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:17:34] "GET /api/status HTTP/1.1" 200 -
+01:17:39 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:17:39] "GET /api/status HTTP/1.1" 200 -
+01:17:44 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:17:44] "GET /api/status HTTP/1.1" 200 -
+01:17:49 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:17:49] "GET /api/status HTTP/1.1" 200 -
+01:17:49 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:17:49] "GET /api/rules HTTP/1.1" 200 -
+01:17:55 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:17:55] "GET /api/status HTTP/1.1" 200 -
+01:18:00 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:18:00] "GET /api/status HTTP/1.1" 200 -
+01:18:05 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:18:05] "GET /api/status HTTP/1.1" 200 -
+01:18:10 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:18:10] "GET /api/status HTTP/1.1" 200 -
+01:18:15 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:18:15] "GET /api/status HTTP/1.1" 200 -
+01:18:20 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:18:20] "GET /api/status HTTP/1.1" 200 -
+01:18:20 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:18:20] "GET /api/rules HTTP/1.1" 200 -
+01:18:25 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:18:25] "GET /api/status HTTP/1.1" 200 -
+01:18:30 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:18:30] "GET /api/status HTTP/1.1" 200 -
+01:18:35 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:18:35] "GET /api/status HTTP/1.1" 200 -
+01:18:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:18:40] "GET /api/status HTTP/1.1" 200 -
+01:18:45 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:18:45] "GET /api/status HTTP/1.1" 200 -
+01:18:50 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:18:50] "GET /api/rules HTTP/1.1" 200 -
+01:19:20 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:19:20] "GET /api/rules HTTP/1.1" 200 -
+01:19:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:19:40] "GET /api/status HTTP/1.1" 200 -
+01:20:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:20:40] "GET /api/status HTTP/1.1" 200 -
+01:20:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:20:40] "GET /api/rules HTTP/1.1" 200 -
+01:21:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:21:40] "GET /api/status HTTP/1.1" 200 -
+01:21:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:21:40] "GET /api/rules HTTP/1.1" 200 -
+01:22:15 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:22:15] "GET /api/status HTTP/1.1" 200 -
+01:22:15 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:22:15] "GET /api/rules HTTP/1.1" 200 -
+01:22:19 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:22:19] "GET /api/status HTTP/1.1" 200 -
+01:22:19 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:22:19] "GET /api/rules HTTP/1.1" 200 -
+01:22:25 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:22:25] "GET /api/status HTTP/1.1" 200 -
+01:22:30 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:22:30] "GET /api/status HTTP/1.1" 200 -
+01:22:35 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:22:35] "GET /api/status HTTP/1.1" 200 -
+01:22:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:22:40] "GET /api/status HTTP/1.1" 200 -
+01:22:45 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:22:45] "GET /api/status HTTP/1.1" 200 -
+01:22:50 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:22:50] "GET /api/status HTTP/1.1" 200 -
+01:22:50 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:22:50] "GET /api/rules HTTP/1.1" 200 -
+01:22:55 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:22:55] "GET /api/status HTTP/1.1" 200 -
+01:23:00 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:23:00] "GET /api/status HTTP/1.1" 200 -
+01:23:05 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:23:05] "GET /api/status HTTP/1.1" 200 -
+01:23:10 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:23:10] "GET /api/status HTTP/1.1" 200 -
+01:23:15 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:23:15] "GET /api/status HTTP/1.1" 200 -
+01:23:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:23:40] "GET /api/status HTTP/1.1" 200 -
+01:23:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:23:40] "GET /api/rules HTTP/1.1" 200 -
+01:23:44 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:23:44] "GET /api/status HTTP/1.1" 200 -
+01:23:50 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:23:50] "GET /api/status HTTP/1.1" 200 -
+01:23:50 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:23:50] "GET /api/rules HTTP/1.1" 200 -
+01:23:55 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:23:55] "GET /api/status HTTP/1.1" 200 -
+01:24:00 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:24:00] "GET /api/status HTTP/1.1" 200 -
+01:24:05 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:24:05] "GET /api/status HTTP/1.1" 200 -
+01:24:10 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:24:10] "GET /api/status HTTP/1.1" 200 -
+01:24:15 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:24:15] "GET /api/status HTTP/1.1" 200 -
+01:24:20 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:24:20] "GET /api/status HTTP/1.1" 200 -
+01:24:20 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:24:20] "GET /api/rules HTTP/1.1" 200 -
+01:24:25 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:24:25] "GET /api/status HTTP/1.1" 200 -
+01:24:30 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:24:30] "GET /api/status HTTP/1.1" 200 -
+01:24:35 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:24:35] "GET /api/status HTTP/1.1" 200 -
+01:24:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:24:40] "GET /api/status HTTP/1.1" 200 -
+01:24:45 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:24:45] "GET /api/status HTTP/1.1" 200 -
+01:25:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:25:40] "GET /api/status HTTP/1.1" 200 -
+01:25:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:25:40] "GET /api/rules HTTP/1.1" 200 -
+01:26:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:26:40] "GET /api/status HTTP/1.1" 200 -
+01:26:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:26:40] "GET /api/rules HTTP/1.1" 200 -
+01:27:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:27:40] "GET /api/status HTTP/1.1" 200 -
+01:27:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:27:40] "GET /api/rules HTTP/1.1" 200 -
+01:28:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:28:40] "GET /api/status HTTP/1.1" 200 -
+01:28:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:28:40] "GET /api/rules HTTP/1.1" 200 -
+01:29:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:29:40] "GET /api/status HTTP/1.1" 200 -
+01:29:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:29:40] "GET /api/rules HTTP/1.1" 200 -
+01:30:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:30:40] "GET /api/status HTTP/1.1" 200 -
+01:30:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:30:40] "GET /api/rules HTTP/1.1" 200 -
+01:31:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:31:40] "GET /api/status HTTP/1.1" 200 -
+01:31:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:31:40] "GET /api/rules HTTP/1.1" 200 -
+01:31:56 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:31:56] "GET /api/status HTTP/1.1" 200 -
+01:31:56 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:31:56] "GET /api/rules HTTP/1.1" 200 -
+01:31:58 [agent.web         ] INFO  WebSocket 客户端断开
+01:31:58 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:31:58] "GET /socket.io/?EIO=4&transport=websocket&sid=aZuo1k0kWMnJNEH3AAAI HTTP/1.1" 200 -
+01:31:58 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:31:58] "GET / HTTP/1.1" 200 -
+01:31:58 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:31:58] "GET /socket.io/?EIO=4&transport=polling&t=PzIF6Xt HTTP/1.1" 200 -
+01:31:58 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:31:58] "GET /api/rules HTTP/1.1" 200 -
+01:31:58 [agent.web         ] INFO  WebSocket 客户端连接
+01:31:58 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:31:58] "POST /socket.io/?EIO=4&transport=polling&t=PzIF6Xy&sid=hCyjYoLs8B1SVGAKAAAK HTTP/1.1" 200 -
+01:31:58 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:31:58] "GET /socket.io/?EIO=4&transport=polling&t=PzIF6Xy.0&sid=hCyjYoLs8B1SVGAKAAAK HTTP/1.1" 200 -
+01:31:58 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:31:58] "GET /socket.io/?EIO=4&transport=polling&t=PzIF6Y0&sid=hCyjYoLs8B1SVGAKAAAK HTTP/1.1" 200 -
+01:32:03 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:32:03] "GET /api/status HTTP/1.1" 200 -
+01:32:08 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:32:08] "GET /api/status HTTP/1.1" 200 -
+01:32:13 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:32:13] "GET /api/status HTTP/1.1" 200 -
+01:32:15 [agent.web         ] INFO  WebSocket 客户端断开
+01:32:15 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:32:15] "GET /socket.io/?EIO=4&transport=websocket&sid=hCyjYoLs8B1SVGAKAAAK HTTP/1.1" 200 -
+01:32:15 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:32:15] "GET / HTTP/1.1" 200 -
+01:32:15 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:32:15] "GET /api/rules HTTP/1.1" 200 -
+01:32:15 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:32:15] "GET /socket.io/?EIO=4&transport=polling&t=PzIFApK HTTP/1.1" 200 -
+01:32:15 [agent.web         ] INFO  WebSocket 客户端连接
+01:32:15 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:32:15] "POST /socket.io/?EIO=4&transport=polling&t=PzIFApO&sid=4GDju3BhGvsair4CAAAM HTTP/1.1" 200 -
+01:32:15 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:32:15] "GET /socket.io/?EIO=4&transport=polling&t=PzIFApP&sid=4GDju3BhGvsair4CAAAM HTTP/1.1" 200 -
+01:32:15 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:32:15] "GET /socket.io/?EIO=4&transport=polling&t=PzIFApT&sid=4GDju3BhGvsair4CAAAM HTTP/1.1" 200 -
+01:32:17 [agent.web         ] INFO  WebSocket 客户端断开
+01:32:17 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:32:17] "GET /socket.io/?EIO=4&transport=websocket&sid=4GDju3BhGvsair4CAAAM HTTP/1.1" 200 -
+01:32:17 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:32:17] "GET / HTTP/1.1" 200 -
+01:32:17 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:32:17] "GET /socket.io/?EIO=4&transport=polling&t=PzIFB3z HTTP/1.1" 200 -
+01:32:17 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:32:17] "GET /api/rules HTTP/1.1" 200 -
+01:32:17 [agent.web         ] INFO  WebSocket 客户端连接
+01:32:17 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:32:17] "POST /socket.io/?EIO=4&transport=polling&t=PzIFB42&sid=o2c_FnfmGMxQO5bQAAAO HTTP/1.1" 200 -
+01:32:17 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:32:17] "GET /socket.io/?EIO=4&transport=polling&t=PzIFB42.0&sid=o2c_FnfmGMxQO5bQAAAO HTTP/1.1" 200 -
+01:32:17 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:32:17] "GET /socket.io/?EIO=4&transport=polling&t=PzIFB46&sid=o2c_FnfmGMxQO5bQAAAO HTTP/1.1" 200 -
+01:32:17 [agent.web         ] INFO  WebSocket 客户端断开
+01:32:17 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:32:17] "GET /socket.io/?EIO=4&transport=websocket&sid=o2c_FnfmGMxQO5bQAAAO HTTP/1.1" 200 -
+01:32:17 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:32:17] "GET / HTTP/1.1" 200 -
+01:32:17 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:32:17] "GET /socket.io/?EIO=4&transport=polling&t=PzIFB9l HTTP/1.1" 200 -
+01:32:17 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:32:17] "GET /api/rules HTTP/1.1" 200 -
+01:32:17 [agent.web         ] INFO  WebSocket 客户端连接
+01:32:17 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:32:17] "POST /socket.io/?EIO=4&transport=polling&t=PzIFB9p&sid=q_onWu4cI7tSjiSfAAAQ HTTP/1.1" 200 -
+01:32:17 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:32:17] "GET /socket.io/?EIO=4&transport=polling&t=PzIFB9q&sid=q_onWu4cI7tSjiSfAAAQ HTTP/1.1" 200 -
+01:32:17 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:32:17] "GET /socket.io/?EIO=4&transport=polling&t=PzIFB9u&sid=q_onWu4cI7tSjiSfAAAQ HTTP/1.1" 200 -
+01:32:17 [agent.web         ] INFO  WebSocket 客户端断开
+01:32:17 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:32:17] "GET /socket.io/?EIO=4&transport=websocket&sid=q_onWu4cI7tSjiSfAAAQ HTTP/1.1" 200 -
+01:32:17 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:32:17] "GET / HTTP/1.1" 200 -
+01:32:17 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:32:17] "GET /api/rules HTTP/1.1" 200 -
+01:32:17 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:32:17] "GET /socket.io/?EIO=4&transport=polling&t=PzIFBCS HTTP/1.1" 200 -
+01:32:17 [agent.web         ] INFO  WebSocket 客户端连接
+01:32:17 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:32:17] "POST /socket.io/?EIO=4&transport=polling&t=PzIFBCW&sid=-LeElhju81XPTcUkAAAS HTTP/1.1" 200 -
+01:32:17 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:32:17] "GET /socket.io/?EIO=4&transport=polling&t=PzIFBCX&sid=-LeElhju81XPTcUkAAAS HTTP/1.1" 200 -
+01:32:17 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:32:17] "GET /socket.io/?EIO=4&transport=polling&t=PzIFBCb&sid=-LeElhju81XPTcUkAAAS HTTP/1.1" 200 -
+01:32:17 [agent.web         ] INFO  WebSocket 客户端断开
+01:32:17 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:32:17] "GET /socket.io/?EIO=4&transport=websocket&sid=-LeElhju81XPTcUkAAAS HTTP/1.1" 200 -
+01:32:17 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:32:17] "GET / HTTP/1.1" 200 -
+01:32:17 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:32:17] "GET /api/rules HTTP/1.1" 200 -
+01:32:17 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:32:17] "GET /socket.io/?EIO=4&transport=polling&t=PzIFBEs HTTP/1.1" 200 -
+01:32:17 [agent.web         ] INFO  WebSocket 客户端连接
+01:32:17 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:32:17] "POST /socket.io/?EIO=4&transport=polling&t=PzIFBEx&sid=iG_HwfOT3eYx67TUAAAU HTTP/1.1" 200 -
+01:32:17 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:32:17] "GET /socket.io/?EIO=4&transport=polling&t=PzIFBEy&sid=iG_HwfOT3eYx67TUAAAU HTTP/1.1" 200 -
+01:32:17 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:32:17] "GET /socket.io/?EIO=4&transport=polling&t=PzIFBF0&sid=iG_HwfOT3eYx67TUAAAU HTTP/1.1" 200 -
+01:32:18 [agent.web         ] INFO  WebSocket 客户端断开
+01:32:18 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:32:18] "GET /socket.io/?EIO=4&transport=websocket&sid=iG_HwfOT3eYx67TUAAAU HTTP/1.1" 200 -
+01:32:18 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:32:18] "GET / HTTP/1.1" 200 -
+01:32:18 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:32:18] "GET /socket.io/?EIO=4&transport=polling&t=PzIFBJf HTTP/1.1" 200 -
+01:32:18 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:32:18] "GET /api/rules HTTP/1.1" 200 -
+01:32:18 [agent.web         ] INFO  WebSocket 客户端连接
+01:32:18 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:32:18] "POST /socket.io/?EIO=4&transport=polling&t=PzIFBJk&sid=VsMY1BN2TU0JrTJLAAAW HTTP/1.1" 200 -
+01:32:18 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:32:18] "GET /socket.io/?EIO=4&transport=polling&t=PzIFBJl&sid=VsMY1BN2TU0JrTJLAAAW HTTP/1.1" 200 -
+01:32:18 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:32:18] "GET /socket.io/?EIO=4&transport=polling&t=PzIFBJp&sid=VsMY1BN2TU0JrTJLAAAW HTTP/1.1" 200 -
+01:32:24 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:32:24] "GET /api/status HTTP/1.1" 200 -
+01:32:29 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:32:29] "GET /api/status HTTP/1.1" 200 -
+01:32:34 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:32:34] "GET /api/status HTTP/1.1" 200 -
+01:32:39 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:32:39] "GET /api/status HTTP/1.1" 200 -
+01:32:44 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:32:44] "GET /api/status HTTP/1.1" 200 -
+01:32:49 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:32:49] "GET /api/status HTTP/1.1" 200 -
+01:32:49 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:32:49] "GET /api/rules HTTP/1.1" 200 -
+01:32:54 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:32:54] "GET /api/status HTTP/1.1" 200 -
+01:32:59 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:32:59] "GET /api/status HTTP/1.1" 200 -
+01:33:04 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:33:04] "GET /api/status HTTP/1.1" 200 -
+01:33:09 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:33:09] "GET /api/status HTTP/1.1" 200 -
+01:33:12 [agent.web         ] INFO  WebSocket 客户端断开
+01:33:12 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:33:12] "GET /socket.io/?EIO=4&transport=websocket&sid=VsMY1BN2TU0JrTJLAAAW HTTP/1.1" 200 -
+01:33:12 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:33:12] "GET / HTTP/1.1" 200 -
+01:33:12 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:33:12] "GET /socket.io/?EIO=4&transport=polling&t=PzIFOZq HTTP/1.1" 200 -
+01:33:12 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:33:12] "GET /api/rules HTTP/1.1" 200 -
+01:33:12 [agent.web         ] INFO  WebSocket 客户端连接
+01:33:12 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:33:12] "POST /socket.io/?EIO=4&transport=polling&t=PzIFOZu&sid=HSNQZ8XDdPRu2-wlAAAY HTTP/1.1" 200 -
+01:33:12 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:33:12] "GET /socket.io/?EIO=4&transport=polling&t=PzIFOZu.0&sid=HSNQZ8XDdPRu2-wlAAAY HTTP/1.1" 200 -
+01:33:12 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:33:12] "GET /socket.io/?EIO=4&transport=polling&t=PzIFOZz&sid=HSNQZ8XDdPRu2-wlAAAY HTTP/1.1" 200 -
+01:33:17 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:33:17] "GET /api/status HTTP/1.1" 200 -
+01:33:22 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:33:22] "GET /api/status HTTP/1.1" 200 -
+01:33:27 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:33:27] "GET /api/status HTTP/1.1" 200 -
+01:33:33 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:33:33] "GET /api/status HTTP/1.1" 200 -
+01:33:38 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:33:38] "GET /api/status HTTP/1.1" 200 -
+01:33:43 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:33:43] "GET /api/status HTTP/1.1" 200 -
+01:33:43 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:33:43] "GET /api/rules HTTP/1.1" 200 -
+01:33:48 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:33:48] "GET /api/status HTTP/1.1" 200 -
+01:33:52 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:33:52] "GET /api/status HTTP/1.1" 200 -
+01:33:58 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:33:58] "GET /api/status HTTP/1.1" 200 -
+01:34:03 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:34:03] "GET /api/status HTTP/1.1" 200 -
+01:34:08 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:34:08] "GET /api/status HTTP/1.1" 200 -
+01:34:13 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:34:13] "GET /api/status HTTP/1.1" 200 -
+01:34:13 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:34:13] "GET /api/rules HTTP/1.1" 200 -
+01:34:18 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:34:18] "GET /api/status HTTP/1.1" 200 -
+01:34:23 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:34:23] "GET /api/status HTTP/1.1" 200 -
+01:34:28 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:34:28] "GET /api/status HTTP/1.1" 200 -
+01:34:33 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:34:33] "GET /api/status HTTP/1.1" 200 -
+01:34:38 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:34:38] "GET /api/status HTTP/1.1" 200 -
+01:34:43 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:34:43] "GET /api/status HTTP/1.1" 200 -
+01:34:43 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:34:43] "GET /api/rules HTTP/1.1" 200 -
+01:34:48 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:34:48] "GET /api/status HTTP/1.1" 200 -
+01:34:53 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:34:53] "GET /api/status HTTP/1.1" 200 -
+01:35:09 [agent.web         ] INFO  WebSocket 客户端断开
+01:35:09 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:35:09] "GET /socket.io/?EIO=4&transport=websocket&sid=HSNQZ8XDdPRu2-wlAAAY HTTP/1.1" 200 -
+01:35:15 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:35:15] "GET / HTTP/1.1" 200 -
+01:35:16 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:35:16] "GET /socket.io/?EIO=4&transport=polling&t=PzIFsmX HTTP/1.1" 200 -
+01:35:16 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:35:16] "GET /api/rules HTTP/1.1" 200 -
+01:35:16 [agent.web         ] INFO  WebSocket 客户端连接
+01:35:16 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:35:16] "POST /socket.io/?EIO=4&transport=polling&t=PzIFsnY&sid=Snh15IguNXp8yR_7AAAa HTTP/1.1" 200 -
+01:35:16 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:35:16] "GET /socket.io/?EIO=4&transport=polling&t=PzIFsnZ&sid=Snh15IguNXp8yR_7AAAa HTTP/1.1" 200 -
+01:35:16 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:35:16] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+01:35:16 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:35:16] "GET /socket.io/?EIO=4&transport=polling&t=PzIFsnf&sid=Snh15IguNXp8yR_7AAAa HTTP/1.1" 200 -
+01:35:18 [agent.web         ] INFO  WebSocket 客户端断开
+01:35:18 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:35:18] "GET /socket.io/?EIO=4&transport=websocket&sid=Snh15IguNXp8yR_7AAAa HTTP/1.1" 200 -
+01:35:18 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:35:18] "GET / HTTP/1.1" 200 -
+01:35:18 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:35:18] "GET /socket.io/?EIO=4&transport=polling&t=PzIFtM0 HTTP/1.1" 200 -
+01:35:18 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:35:18] "GET /api/rules HTTP/1.1" 200 -
+01:35:18 [agent.web         ] INFO  WebSocket 客户端连接
+01:35:18 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:35:18] "POST /socket.io/?EIO=4&transport=polling&t=PzIFtM4&sid=7VVz-heJqLbltKLpAAAc HTTP/1.1" 200 -
+01:35:18 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:35:18] "GET /socket.io/?EIO=4&transport=polling&t=PzIFtM5&sid=7VVz-heJqLbltKLpAAAc HTTP/1.1" 200 -
+01:35:18 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:35:18] "GET /socket.io/?EIO=4&transport=polling&t=PzIFtM9&sid=7VVz-heJqLbltKLpAAAc HTTP/1.1" 200 -
+01:35:23 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:35:23] "GET /api/status HTTP/1.1" 200 -
+01:35:29 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:35:29] "GET /api/status HTTP/1.1" 200 -
+01:35:34 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:35:34] "GET /api/status HTTP/1.1" 200 -
+01:35:39 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:35:39] "GET /api/status HTTP/1.1" 200 -
+01:35:44 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:35:44] "GET /api/status HTTP/1.1" 200 -
+01:35:49 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:35:49] "GET /api/status HTTP/1.1" 200 -
+01:35:49 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:35:49] "GET /api/rules HTTP/1.1" 200 -
+01:35:52 [agent.web         ] INFO  WebSocket 客户端断开
+01:35:52 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:35:52] "GET /socket.io/?EIO=4&transport=websocket&sid=7VVz-heJqLbltKLpAAAc HTTP/1.1" 200 -
+01:35:52 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:35:52] "GET / HTTP/1.1" 200 -
+01:35:52 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:35:52] "GET /socket.io/?EIO=4&transport=polling&t=PzIF_Za HTTP/1.1" 200 -
+01:35:52 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:35:52] "GET /api/rules HTTP/1.1" 200 -
+01:35:52 [agent.web         ] INFO  WebSocket 客户端连接
+01:35:52 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:35:52] "POST /socket.io/?EIO=4&transport=polling&t=PzIF_Zf&sid=57t8PmUeOr29BC5NAAAe HTTP/1.1" 200 -
+01:35:52 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:35:52] "GET /socket.io/?EIO=4&transport=polling&t=PzIF_Zf.0&sid=57t8PmUeOr29BC5NAAAe HTTP/1.1" 200 -
+01:35:52 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:35:52] "GET /socket.io/?EIO=4&transport=polling&t=PzIF_Zk&sid=57t8PmUeOr29BC5NAAAe HTTP/1.1" 200 -
+01:35:53 [agent.web         ] INFO  WebSocket 客户端断开
+01:35:53 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:35:53] "GET /socket.io/?EIO=4&transport=websocket&sid=57t8PmUeOr29BC5NAAAe HTTP/1.1" 200 -
+01:35:53 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:35:53] "GET / HTTP/1.1" 200 -
+01:35:53 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:35:53] "GET /api/rules HTTP/1.1" 200 -
+01:35:53 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:35:53] "GET /socket.io/?EIO=4&transport=polling&t=PzIF_os HTTP/1.1" 200 -
+01:35:53 [agent.web         ] INFO  WebSocket 客户端连接
+01:35:53 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:35:53] "POST /socket.io/?EIO=4&transport=polling&t=PzIF_ox&sid=OmX79Bykzutyq_xNAAAg HTTP/1.1" 200 -
+01:35:53 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:35:53] "GET /socket.io/?EIO=4&transport=polling&t=PzIF_ox.0&sid=OmX79Bykzutyq_xNAAAg HTTP/1.1" 200 -
+01:35:53 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:35:53] "GET /socket.io/?EIO=4&transport=polling&t=PzIF_o_&sid=OmX79Bykzutyq_xNAAAg HTTP/1.1" 200 -
+01:35:58 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:35:58] "GET /api/status HTTP/1.1" 200 -
+01:36:03 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:36:03] "GET /api/status HTTP/1.1" 200 -
+01:36:08 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:36:08] "GET /api/status HTTP/1.1" 200 -
+01:36:13 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:36:13] "GET /api/status HTTP/1.1" 200 -
+01:36:18 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:36:18] "GET /api/status HTTP/1.1" 200 -
+01:36:23 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:36:23] "GET /api/status HTTP/1.1" 200 -
+01:36:23 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:36:23] "GET /api/rules HTTP/1.1" 200 -
+01:36:28 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:36:28] "GET /api/status HTTP/1.1" 200 -
+01:36:33 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:36:33] "GET /api/status HTTP/1.1" 200 -
+01:36:38 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:36:38] "GET /api/status HTTP/1.1" 200 -
+01:36:43 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:36:43] "GET /api/status HTTP/1.1" 200 -
+01:36:48 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:36:48] "GET /api/status HTTP/1.1" 200 -
+01:36:53 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:36:53] "GET /api/status HTTP/1.1" 200 -
+01:36:53 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:36:53] "GET /api/rules HTTP/1.1" 200 -
+01:36:58 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:36:58] "GET /api/status HTTP/1.1" 200 -
+01:37:03 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:37:03] "GET /api/status HTTP/1.1" 200 -
+01:37:11 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:37:11] "GET /api/status HTTP/1.1" 200 -
+01:37:13 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:37:13] "GET /api/status HTTP/1.1" 200 -
+01:37:13 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:37:13] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+01:37:18 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:37:18] "GET /api/status HTTP/1.1" 200 -
+01:37:23 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:37:23] "GET /api/status HTTP/1.1" 200 -
+01:37:23 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:37:23] "GET /api/rules HTTP/1.1" 200 -
+01:37:28 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:37:28] "GET /api/status HTTP/1.1" 200 -
+01:37:33 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:37:33] "GET /api/status HTTP/1.1" 200 -
+01:37:38 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:37:38] "GET /api/status HTTP/1.1" 200 -
+01:37:43 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:37:43] "GET /api/status HTTP/1.1" 200 -
+01:37:48 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:37:48] "GET /api/status HTTP/1.1" 200 -
+01:37:53 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:37:53] "GET /api/status HTTP/1.1" 200 -
+01:37:53 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:37:53] "GET /api/rules HTTP/1.1" 200 -
+01:37:58 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:37:58] "GET /api/status HTTP/1.1" 200 -
+01:38:03 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:38:03] "GET /api/status HTTP/1.1" 200 -
+01:38:06 [agent.web         ] INFO  WebSocket 客户端断开
+01:38:06 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 01:38:06] "GET /socket.io/?EIO=4&transport=websocket&sid=OmX79Bykzutyq_xNAAAg HTTP/1.1" 200 -
+01:38:33 [agent.mqtt        ] WARNING 无效 JSON: b'{"status":"off'
+01:39:24 [agent.mqtt        ] WARNING 无效 JSON: b'{"status":"off'
+01:40:14 [agent.mqtt        ] WARNING 无效 JSON: b'{"status":"off'
+01:44:27 [agent.mqtt        ] INFO  断开 MQTT...
+01:44:27 [agent.mqtt        ] WARNING MQTT 断开: rc=0
+01:44:27 [agent.main        ] INFO  Agent 已停止
+01:44:31 [agent.core        ] INFO  Agent 初始化完成, model=deepseek-chat
+01:44:31 [agent.automation  ] INFO  规则文件不存在, 从空开始
+01:44:31 [agent.mqtt        ] INFO  注册事件处理器: sensor.report
+01:44:31 [agent.mqtt        ] INFO  注册事件处理器: tool.result
+01:44:31 [agent.mqtt        ] INFO  注册事件处理器: heartbeat
+01:44:31 [agent.mqtt        ] INFO  注册事件处理器: device.register
+01:44:31 [agent.mqtt        ] INFO  连接 MQTT Broker: 192.168.8.176:1883
+01:44:31 [agent.mqtt        ] INFO  MQTT 连接成功
+01:44:31 [agent.mqtt        ] INFO  订阅: edge/+/sensor/report
+01:44:31 [agent.mqtt        ] INFO  订阅: edge/+/actuator/status
+01:44:31 [agent.mqtt        ] INFO  订阅: edge/+/tool/result
+01:44:31 [agent.mqtt        ] INFO  订阅: edge/+/heartbeat
+01:44:31 [agent.mqtt        ] INFO  MQTT 已连接
+01:44:31 [agent.main        ] INFO  Agent 初始化完成
+01:44:31 [agent.main        ] INFO  自动化引擎启动 (间隔=10s)
+01:44:31 [agent.main        ] INFO  主动巡检启动 (间隔=300s)
+01:44:32 [agent.main        ] INFO  Web Dashboard: http://0.0.0.0:5000
+01:44:32 [werkzeug          ] INFO  [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.8.176:5000
+01:44:32 [werkzeug          ] INFO  [33mPress CTRL+C to quit[0m
+01:46:11 [httpx             ] INFO  HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 401 Authorization Required"
+01:46:11 [agent.mqtt        ] INFO  断开 MQTT...
+01:46:11 [agent.mqtt        ] WARNING MQTT 断开: rc=0
+01:46:11 [agent.main        ] INFO  Agent 已停止
+01:46:23 [agent.core        ] INFO  Agent 初始化完成, model=deepseek-chat
+01:46:23 [agent.automation  ] INFO  规则文件不存在, 从空开始
+01:46:23 [agent.mqtt        ] INFO  注册事件处理器: sensor.report
+01:46:23 [agent.mqtt        ] INFO  注册事件处理器: tool.result
+01:46:23 [agent.mqtt        ] INFO  注册事件处理器: heartbeat
+01:46:23 [agent.mqtt        ] INFO  注册事件处理器: device.register
+01:46:23 [agent.mqtt        ] INFO  连接 MQTT Broker: 192.168.8.176:1883
+01:46:23 [agent.mqtt        ] INFO  MQTT 连接成功
+01:46:23 [agent.mqtt        ] INFO  订阅: edge/+/sensor/report
+01:46:23 [agent.mqtt        ] INFO  订阅: edge/+/actuator/status
+01:46:23 [agent.mqtt        ] INFO  订阅: edge/+/tool/result
+01:46:23 [agent.mqtt        ] INFO  订阅: edge/+/heartbeat
+01:46:23 [agent.mqtt        ] INFO  MQTT 已连接
+01:46:23 [agent.main        ] INFO  Agent 初始化完成
+01:46:23 [agent.main        ] INFO  自动化引擎启动 (间隔=10s)
+01:46:23 [agent.main        ] INFO  主动巡检启动 (间隔=300s)
+01:46:23 [agent.main        ] INFO  Web Dashboard: http://0.0.0.0:5000
+01:46:23 [werkzeug          ] INFO  [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.8.176:5000
+01:46:23 [werkzeug          ] INFO  [33mPress CTRL+C to quit[0m
+02:06:44 [agent.core        ] INFO  Agent 初始化完成, model=deepseek-chat
+02:06:44 [agent.automation  ] INFO  规则文件不存在, 从空开始
+02:06:44 [agent.mqtt        ] INFO  注册事件处理器: sensor.report
+02:06:44 [agent.mqtt        ] INFO  注册事件处理器: tool.result
+02:06:44 [agent.mqtt        ] INFO  注册事件处理器: heartbeat
+02:06:44 [agent.mqtt        ] INFO  注册事件处理器: device.register
+02:06:44 [agent.mqtt        ] INFO  连接 MQTT Broker: 192.168.1.50:1883
+02:06:49 [agent.mqtt        ] ERROR MQTT 连接超时
+02:06:49 [agent.main        ] INFO  Agent 初始化完成
+02:06:49 [agent.main        ] INFO  自动化引擎启动 (间隔=10s)
+02:06:49 [agent.main        ] INFO  主动巡检启动 (间隔=300s)
+02:06:49 [agent.main        ] INFO  Web Dashboard: http://0.0.0.0:5000
+02:06:49 [werkzeug          ] INFO  [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.8.176:5000
+02:06:49 [werkzeug          ] INFO  [33mPress CTRL+C to quit[0m
+02:08:45 [agent.mqtt        ] INFO  断开 MQTT...
+02:08:46 [agent.main        ] INFO  Agent 已停止
+02:08:49 [agent.core        ] INFO  Agent 初始化完成, model=deepseek-chat
+02:08:49 [agent.automation  ] INFO  规则文件不存在, 从空开始
+02:08:49 [agent.mqtt        ] INFO  注册事件处理器: sensor.report
+02:08:49 [agent.mqtt        ] INFO  注册事件处理器: tool.result
+02:08:49 [agent.mqtt        ] INFO  注册事件处理器: heartbeat
+02:08:49 [agent.mqtt        ] INFO  注册事件处理器: device.register
+02:08:49 [agent.mqtt        ] INFO  连接 MQTT Broker: 127.0.0.1:1883
+02:08:49 [agent.mqtt        ] INFO  MQTT 连接成功
+02:08:49 [agent.mqtt        ] INFO  订阅: edge/+/sensor/report
+02:08:49 [agent.mqtt        ] INFO  订阅: edge/+/actuator/status
+02:08:49 [agent.mqtt        ] INFO  订阅: edge/+/tool/result
+02:08:49 [agent.mqtt        ] INFO  订阅: edge/+/heartbeat
+02:08:49 [agent.mqtt        ] INFO  MQTT 已连接
+02:08:49 [agent.main        ] INFO  Agent 初始化完成
+02:08:49 [agent.main        ] INFO  自动化引擎启动 (间隔=10s)
+02:08:49 [agent.main        ] INFO  主动巡检启动 (间隔=300s)
+02:08:49 [agent.main        ] INFO  Web Dashboard: http://0.0.0.0:5000
+02:08:49 [werkzeug          ] INFO  [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.8.176:5000
+02:08:49 [werkzeug          ] INFO  [33mPress CTRL+C to quit[0m
+02:11:04 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:11:04] "[33mGET /api/status、 HTTP/1.1[0m" 404 -
+02:11:04 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:11:04] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+02:11:10 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:11:10] "GET /api/status HTTP/1.1" 200 -
+02:13:37 [agent.mqtt        ] INFO  断开 MQTT...
+02:13:38 [agent.mqtt        ] WARNING MQTT 断开: rc=0
+02:13:38 [agent.main        ] INFO  Agent 已停止
+02:13:42 [agent.core        ] INFO  Agent 初始化完成, model=deepseek-chat
+02:13:42 [agent.automation  ] INFO  规则文件不存在, 从空开始
+02:13:42 [agent.mqtt        ] INFO  注册事件处理器: sensor.report
+02:13:42 [agent.mqtt        ] INFO  注册事件处理器: tool.result
+02:13:42 [agent.mqtt        ] INFO  注册事件处理器: heartbeat
+02:13:42 [agent.mqtt        ] INFO  注册事件处理器: device.register
+02:13:42 [agent.mqtt        ] INFO  连接 MQTT Broker: 127.0.0.1:1883
+02:13:42 [agent.mqtt        ] INFO  MQTT 连接成功
+02:13:42 [agent.mqtt        ] INFO  订阅: edge/+/sensor/report
+02:13:42 [agent.mqtt        ] INFO  订阅: edge/+/actuator/status
+02:13:42 [agent.mqtt        ] INFO  订阅: edge/+/tool/result
+02:13:42 [agent.mqtt        ] INFO  订阅: edge/+/heartbeat
+02:13:42 [agent.mqtt        ] INFO  MQTT 已连接
+02:13:42 [agent.main        ] INFO  Agent 初始化完成
+02:13:42 [agent.main        ] INFO  自动化引擎启动 (间隔=10s)
+02:13:42 [agent.main        ] INFO  主动巡检启动 (间隔=300s)
+02:13:42 [agent.main        ] INFO  Web Dashboard: http://0.0.0.0:5000
+02:13:42 [werkzeug          ] INFO  [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.8.176:5000
+02:13:42 [werkzeug          ] INFO  [33mPress CTRL+C to quit[0m
+02:28:38 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:28:38] "GET /api/status HTTP/1.1" 200 -
+02:29:07 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:29:07] "GET / HTTP/1.1" 200 -
+02:29:07 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:29:07] "GET /api/rules HTTP/1.1" 200 -
+02:29:07 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:29:07] "GET /socket.io/?EIO=4&transport=polling&t=PzISBn_ HTTP/1.1" 200 -
+02:29:07 [agent.web         ] INFO  WebSocket 客户端连接
+02:29:07 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:29:07] "POST /socket.io/?EIO=4&transport=polling&t=PzISBo7&sid=1k76x4bCkQGtoOv7AAAA HTTP/1.1" 200 -
+02:29:07 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:29:07] "GET /socket.io/?EIO=4&transport=polling&t=PzISBo8&sid=1k76x4bCkQGtoOv7AAAA HTTP/1.1" 200 -
+02:29:07 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:29:07] "GET /socket.io/?EIO=4&transport=polling&t=PzISBoF&sid=1k76x4bCkQGtoOv7AAAA HTTP/1.1" 200 -
+02:29:12 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:29:12] "GET /api/status HTTP/1.1" 200 -
+02:29:18 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:29:18] "GET /api/status HTTP/1.1" 200 -
+02:29:22 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:29:22] "GET /api/status HTTP/1.1" 200 -
+02:29:24 [agent.web         ] INFO  WebSocket 客户端断开
+02:29:24 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:29:24] "GET /socket.io/?EIO=4&transport=websocket&sid=1k76x4bCkQGtoOv7AAAA HTTP/1.1" 200 -
+02:29:24 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:29:24] "GET / HTTP/1.1" 200 -
+02:29:24 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:29:24] "GET /socket.io/?EIO=4&transport=polling&t=PzISFlA HTTP/1.1" 200 -
+02:29:24 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:29:24] "GET /api/rules HTTP/1.1" 200 -
+02:29:24 [agent.web         ] INFO  WebSocket 客户端连接
+02:29:24 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:29:24] "POST /socket.io/?EIO=4&transport=polling&t=PzISFlG&sid=-l6ysI9cnXXLWigsAAAC HTTP/1.1" 200 -
+02:29:24 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:29:24] "GET /socket.io/?EIO=4&transport=polling&t=PzISFlG.0&sid=-l6ysI9cnXXLWigsAAAC HTTP/1.1" 200 -
+02:29:24 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:29:24] "GET /socket.io/?EIO=4&transport=polling&t=PzISFlL&sid=-l6ysI9cnXXLWigsAAAC HTTP/1.1" 200 -
+02:29:29 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:29:29] "GET /api/status HTTP/1.1" 200 -
+02:29:34 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:29:34] "GET /api/status HTTP/1.1" 200 -
+02:29:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:29:40] "GET /api/status HTTP/1.1" 200 -
+02:29:45 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:29:45] "GET /api/status HTTP/1.1" 200 -
+02:29:49 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:29:49] "GET /api/status HTTP/1.1" 200 -
+02:29:55 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:29:55] "GET /api/status HTTP/1.1" 200 -
+02:29:55 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:29:55] "GET /api/rules HTTP/1.1" 200 -
+02:30:00 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:30:00] "GET /api/status HTTP/1.1" 200 -
+02:30:05 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:30:05] "GET /api/status HTTP/1.1" 200 -
+02:30:10 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:30:10] "GET /api/status HTTP/1.1" 200 -
+02:30:15 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:30:15] "GET /api/status HTTP/1.1" 200 -
+02:30:20 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:30:20] "GET /api/status HTTP/1.1" 200 -
+02:30:25 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:30:25] "GET /api/status HTTP/1.1" 200 -
+02:30:25 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:30:25] "GET /api/rules HTTP/1.1" 200 -
+02:30:30 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:30:30] "GET /api/status HTTP/1.1" 200 -
+02:30:35 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:30:35] "GET /api/status HTTP/1.1" 200 -
+02:30:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:30:40] "GET /api/status HTTP/1.1" 200 -
+02:30:44 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:30:44] "GET /api/status HTTP/1.1" 200 -
+02:30:50 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:30:50] "GET /api/status HTTP/1.1" 200 -
+02:30:55 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:30:55] "GET /api/status HTTP/1.1" 200 -
+02:30:55 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:30:55] "GET /api/rules HTTP/1.1" 200 -
+02:31:00 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:31:00] "GET /api/status HTTP/1.1" 200 -
+02:31:05 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:31:05] "GET /api/status HTTP/1.1" 200 -
+02:31:10 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:31:10] "GET /api/status HTTP/1.1" 200 -
+02:31:15 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:31:15] "GET /api/status HTTP/1.1" 200 -
+02:31:20 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:31:20] "GET /api/status HTTP/1.1" 200 -
+02:31:25 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:31:25] "GET /api/status HTTP/1.1" 200 -
+02:31:25 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:31:25] "GET /api/rules HTTP/1.1" 200 -
+02:31:30 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:31:30] "GET /api/status HTTP/1.1" 200 -
+02:31:35 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:31:35] "GET /api/status HTTP/1.1" 200 -
+02:31:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:31:40] "GET /api/status HTTP/1.1" 200 -
+02:31:45 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:31:45] "GET /api/status HTTP/1.1" 200 -
+02:31:55 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:31:55] "GET /api/rules HTTP/1.1" 200 -
+02:32:10 [agent.mqtt        ] WARNING 无效 JSON: b'{temperature:25.5,humidity:45,illuminance:320}'
+02:32:11 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:32:11] "GET /api/status HTTP/1.1" 200 -
+02:32:12 [agent.web         ] INFO  WebSocket 客户端断开
+02:32:12 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:32:12] "GET /socket.io/?EIO=4&transport=websocket&sid=-l6ysI9cnXXLWigsAAAC HTTP/1.1" 200 -
+02:32:12 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:32:12] "GET / HTTP/1.1" 200 -
+02:32:12 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:32:12] "GET /socket.io/?EIO=4&transport=polling&t=PzISuw7 HTTP/1.1" 200 -
+02:32:12 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:32:12] "GET /api/rules HTTP/1.1" 200 -
+02:32:12 [agent.web         ] INFO  WebSocket 客户端连接
+02:32:12 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:32:12] "POST /socket.io/?EIO=4&transport=polling&t=PzISuwB&sid=fNdgSp5FBMiQO8frAAAE HTTP/1.1" 200 -
+02:32:12 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:32:12] "GET /socket.io/?EIO=4&transport=polling&t=PzISuwB.0&sid=fNdgSp5FBMiQO8frAAAE HTTP/1.1" 200 -
+02:32:12 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:32:12] "GET /socket.io/?EIO=4&transport=polling&t=PzISuwG&sid=fNdgSp5FBMiQO8frAAAE HTTP/1.1" 200 -
+02:32:17 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:32:17] "GET /api/status HTTP/1.1" 200 -
+02:32:23 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:32:23] "GET /api/status HTTP/1.1" 200 -
+02:32:28 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:32:28] "GET /api/status HTTP/1.1" 200 -
+02:32:33 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:32:33] "GET /api/status HTTP/1.1" 200 -
+02:32:38 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:32:38] "GET /api/status HTTP/1.1" 200 -
+02:32:43 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:32:43] "GET /api/status HTTP/1.1" 200 -
+02:32:43 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:32:43] "GET /api/rules HTTP/1.1" 200 -
+02:32:48 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:32:48] "GET /api/status HTTP/1.1" 200 -
+02:32:53 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:32:53] "GET /api/status HTTP/1.1" 200 -
+02:32:58 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:32:58] "GET /api/status HTTP/1.1" 200 -
+02:33:02 [agent.mqtt        ] WARNING 无效 JSON: b'{temperature:25.5,humidity:45,illuminance:320}'
+02:33:03 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:33:03] "GET /api/status HTTP/1.1" 200 -
+02:33:08 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:33:08] "GET /api/status HTTP/1.1" 200 -
+02:33:13 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:33:13] "GET /api/status HTTP/1.1" 200 -
+02:33:13 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:33:13] "GET /api/rules HTTP/1.1" 200 -
+02:33:18 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:33:18] "GET /api/status HTTP/1.1" 200 -
+02:33:23 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:33:23] "GET /api/status HTTP/1.1" 200 -
+02:33:28 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:33:28] "GET /api/status HTTP/1.1" 200 -
+02:33:33 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:33:33] "GET /api/status HTTP/1.1" 200 -
+02:33:38 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:33:38] "GET /api/status HTTP/1.1" 200 -
+02:33:43 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:33:43] "GET /api/status HTTP/1.1" 200 -
+02:33:43 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:33:43] "GET /api/rules HTTP/1.1" 200 -
+02:33:48 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:33:48] "GET /api/status HTTP/1.1" 200 -
+02:33:53 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:33:53] "GET /api/status HTTP/1.1" 200 -
+02:33:58 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:33:58] "GET /api/status HTTP/1.1" 200 -
+02:34:03 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:34:03] "GET /api/status HTTP/1.1" 200 -
+02:34:13 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:34:13] "GET /api/rules HTTP/1.1" 200 -
+02:34:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:34:40] "GET /api/status HTTP/1.1" 200 -
+02:34:43 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:34:43] "GET /api/rules HTTP/1.1" 200 -
+02:34:46 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:34:46] "GET /api/status HTTP/1.1" 200 -
+02:34:47 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:34:47] "GET /api/status HTTP/1.1" 200 -
+02:34:53 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:34:53] "GET /api/status HTTP/1.1" 200 -
+02:34:58 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:34:58] "GET /api/status HTTP/1.1" 200 -
+02:35:03 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:35:03] "GET /api/status HTTP/1.1" 200 -
+02:35:08 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:35:08] "GET /api/status HTTP/1.1" 200 -
+02:35:13 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:35:13] "GET /api/status HTTP/1.1" 200 -
+02:35:13 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:35:13] "GET /api/rules HTTP/1.1" 200 -
+02:35:18 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:35:18] "GET /api/status HTTP/1.1" 200 -
+02:35:23 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:35:23] "GET /api/status HTTP/1.1" 200 -
+02:35:28 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:35:28] "GET /api/status HTTP/1.1" 200 -
+02:35:33 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:35:33] "GET /api/status HTTP/1.1" 200 -
+02:35:38 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:35:38] "GET /api/status HTTP/1.1" 200 -
+02:35:43 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:35:43] "GET /api/status HTTP/1.1" 200 -
+02:35:43 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:35:43] "GET /api/rules HTTP/1.1" 200 -
+02:35:48 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:35:48] "GET /api/status HTTP/1.1" 200 -
+02:36:17 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:36:17] "GET /api/status HTTP/1.1" 200 -
+02:36:17 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:36:17] "GET /api/rules HTTP/1.1" 200 -
+02:36:17 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:36:17] "GET /api/status HTTP/1.1" 200 -
+02:36:19 [agent.web         ] INFO  WebSocket 客户端断开
+02:36:19 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:36:19] "GET /socket.io/?EIO=4&transport=websocket&sid=fNdgSp5FBMiQO8frAAAE HTTP/1.1" 200 -
+02:36:19 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:36:19] "GET / HTTP/1.1" 200 -
+02:36:19 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:36:19] "GET /api/rules HTTP/1.1" 200 -
+02:36:19 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:36:19] "GET /socket.io/?EIO=4&transport=polling&t=PzITr55 HTTP/1.1" 200 -
+02:36:19 [agent.web         ] INFO  WebSocket 客户端连接
+02:36:19 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:36:19] "POST /socket.io/?EIO=4&transport=polling&t=PzITr59&sid=Mw4g6nQntNaJNsA9AAAG HTTP/1.1" 200 -
+02:36:19 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:36:19] "GET /socket.io/?EIO=4&transport=polling&t=PzITr5A&sid=Mw4g6nQntNaJNsA9AAAG HTTP/1.1" 200 -
+02:36:19 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:36:19] "GET /socket.io/?EIO=4&transport=polling&t=PzITr5E&sid=Mw4g6nQntNaJNsA9AAAG HTTP/1.1" 200 -
+02:36:25 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:36:25] "GET /api/status HTTP/1.1" 200 -
+02:36:30 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:36:30] "GET /api/status HTTP/1.1" 200 -
+02:36:35 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:36:35] "GET /api/status HTTP/1.1" 200 -
+02:36:40 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:36:40] "GET /api/status HTTP/1.1" 200 -
+02:36:42 [agent.web         ] INFO  WebSocket 客户端断开
+02:36:42 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:36:42] "GET /socket.io/?EIO=4&transport=websocket&sid=Mw4g6nQntNaJNsA9AAAG HTTP/1.1" 200 -
+02:36:42 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:36:42] "GET / HTTP/1.1" 200 -
+02:36:42 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:36:42] "GET /socket.io/?EIO=4&transport=polling&t=PzITwot HTTP/1.1" 200 -
+02:36:42 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:36:42] "GET /api/rules HTTP/1.1" 200 -
+02:36:42 [agent.web         ] INFO  WebSocket 客户端连接
+02:36:42 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:36:42] "POST /socket.io/?EIO=4&transport=polling&t=PzITwox&sid=Z8rqHK5LivWIChybAAAI HTTP/1.1" 200 -
+02:36:42 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:36:42] "GET /socket.io/?EIO=4&transport=polling&t=PzITwoy&sid=Z8rqHK5LivWIChybAAAI HTTP/1.1" 200 -
+02:36:42 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:36:42] "GET /socket.io/?EIO=4&transport=polling&t=PzITwp1&sid=Z8rqHK5LivWIChybAAAI HTTP/1.1" 200 -
+02:36:47 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:36:47] "GET /api/status HTTP/1.1" 200 -
+02:36:52 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:36:52] "GET /api/status HTTP/1.1" 200 -
+02:36:57 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:36:57] "GET /api/status HTTP/1.1" 200 -
+02:37:02 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:37:02] "GET /api/status HTTP/1.1" 200 -
+02:37:07 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:37:07] "GET /api/status HTTP/1.1" 200 -
+02:37:12 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:37:12] "GET /api/status HTTP/1.1" 200 -
+02:37:12 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:37:12] "GET /api/rules HTTP/1.1" 200 -
+02:37:17 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:37:17] "GET /api/status HTTP/1.1" 200 -
+02:37:22 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:37:22] "GET /api/status HTTP/1.1" 200 -
+02:37:27 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:37:27] "GET /api/status HTTP/1.1" 200 -
+02:37:32 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:37:32] "GET /api/status HTTP/1.1" 200 -
+02:37:37 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:37:37] "GET /api/status HTTP/1.1" 200 -
+02:37:42 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:37:42] "GET /api/status HTTP/1.1" 200 -
+02:37:42 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:37:42] "GET /api/rules HTTP/1.1" 200 -
+02:37:47 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:37:47] "GET /api/status HTTP/1.1" 200 -
+02:37:52 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:37:52] "GET /api/status HTTP/1.1" 200 -
+02:37:53 [agent.web         ] INFO  WebSocket 客户端断开
+02:37:53 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:37:53] "GET /socket.io/?EIO=4&transport=websocket&sid=Z8rqHK5LivWIChybAAAI HTTP/1.1" 200 -
+02:37:53 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:37:53] "GET / HTTP/1.1" 200 -
+02:37:53 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:37:53] "GET /socket.io/?EIO=4&transport=polling&t=PzIUCCR HTTP/1.1" 200 -
+02:37:53 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:37:53] "GET /api/rules HTTP/1.1" 200 -
+02:37:53 [agent.web         ] INFO  WebSocket 客户端连接
+02:37:53 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:37:53] "POST /socket.io/?EIO=4&transport=polling&t=PzIUCCX&sid=6ElHvMZi80d9Eud5AAAK HTTP/1.1" 200 -
+02:37:53 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:37:53] "GET /socket.io/?EIO=4&transport=polling&t=PzIUCCX.0&sid=6ElHvMZi80d9Eud5AAAK HTTP/1.1" 200 -
+02:37:53 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:37:53] "GET /socket.io/?EIO=4&transport=polling&t=PzIUCCc&sid=6ElHvMZi80d9Eud5AAAK HTTP/1.1" 200 -
+02:37:59 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:37:59] "GET /api/status HTTP/1.1" 200 -
+02:38:04 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:38:04] "GET /api/status HTTP/1.1" 200 -
+02:38:09 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:38:09] "GET /api/status HTTP/1.1" 200 -
+02:38:14 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:38:14] "GET /api/status HTTP/1.1" 200 -
+02:38:19 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:38:19] "GET /api/status HTTP/1.1" 200 -
+02:38:24 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:38:24] "GET /api/status HTTP/1.1" 200 -
+02:38:24 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:38:24] "GET /api/rules HTTP/1.1" 200 -
+02:38:29 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:38:29] "GET /api/status HTTP/1.1" 200 -
+02:38:34 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:38:34] "GET /api/status HTTP/1.1" 200 -
+02:38:36 [agent.web         ] INFO  WebSocket 客户端断开
+02:38:36 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:38:36] "GET /socket.io/?EIO=4&transport=websocket&sid=6ElHvMZi80d9Eud5AAAK HTTP/1.1" 200 -
+02:38:36 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:38:36] "GET / HTTP/1.1" 200 -
+02:38:36 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:38:36] "GET /api/rules HTTP/1.1" 200 -
+02:38:36 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:38:36] "GET /socket.io/?EIO=4&transport=polling&t=PzIUMZE HTTP/1.1" 200 -
+02:38:36 [agent.web         ] INFO  WebSocket 客户端连接
+02:38:36 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:38:36] "POST /socket.io/?EIO=4&transport=polling&t=PzIUMZI&sid=8MvtDi0i2JVUIScZAAAM HTTP/1.1" 200 -
+02:38:36 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:38:36] "GET /socket.io/?EIO=4&transport=polling&t=PzIUMZJ&sid=8MvtDi0i2JVUIScZAAAM HTTP/1.1" 200 -
+02:38:36 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:38:36] "GET /socket.io/?EIO=4&transport=polling&t=PzIUMZP&sid=8MvtDi0i2JVUIScZAAAM HTTP/1.1" 200 -
+02:38:42 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:38:42] "GET /api/status HTTP/1.1" 200 -
+02:38:47 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:38:47] "GET /api/status HTTP/1.1" 200 -
+02:38:52 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:38:52] "GET /api/status HTTP/1.1" 200 -
+02:38:57 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:38:57] "GET /api/status HTTP/1.1" 200 -
+02:39:02 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:39:02] "GET /api/status HTTP/1.1" 200 -
+02:39:07 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:39:07] "GET /api/status HTTP/1.1" 200 -
+02:39:07 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:39:07] "GET /api/rules HTTP/1.1" 200 -
+02:39:12 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:39:12] "GET /api/status HTTP/1.1" 200 -
+02:39:17 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:39:17] "GET /api/status HTTP/1.1" 200 -
+02:39:22 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:39:22] "GET /api/status HTTP/1.1" 200 -
+02:39:27 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:39:27] "GET /api/status HTTP/1.1" 200 -
+02:44:48 [agent.core        ] INFO  Agent 初始化完成, model=deepseek-chat
+02:44:48 [agent.automation  ] INFO  规则文件不存在, 从空开始
+02:44:48 [agent.mqtt        ] INFO  注册事件处理器: sensor.report
+02:44:48 [agent.mqtt        ] INFO  注册事件处理器: tool.result
+02:44:48 [agent.mqtt        ] INFO  注册事件处理器: heartbeat
+02:44:48 [agent.mqtt        ] INFO  注册事件处理器: device.register
+02:44:48 [agent.mqtt        ] INFO  连接 MQTT Broker: 127.0.0.1:1883
+02:44:48 [agent.mqtt        ] INFO  MQTT 连接成功
+02:44:48 [agent.mqtt        ] INFO  订阅: edge/+/sensor/report
+02:44:48 [agent.mqtt        ] INFO  订阅: edge/+/actuator/status
+02:44:48 [agent.mqtt        ] INFO  订阅: edge/+/tool/result
+02:44:48 [agent.mqtt        ] INFO  订阅: edge/+/heartbeat
+02:44:48 [agent.mqtt        ] INFO  MQTT 已连接
+02:44:48 [agent.main        ] INFO  Agent 初始化完成
+02:44:48 [agent.main        ] INFO  自动化引擎启动 (间隔=10s)
+02:44:48 [agent.main        ] INFO  主动巡检启动 (间隔=300s)
+02:44:48 [agent.main        ] INFO  Web Dashboard: http://0.0.0.0:5000
+02:44:48 [werkzeug          ] INFO  [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.8.176:5000
+02:44:48 [werkzeug          ] INFO  [33mPress CTRL+C to quit[0m
+02:44:52 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:44:52] "GET / HTTP/1.1" 200 -
+02:44:52 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:44:52] "GET /socket.io/?EIO=4&transport=polling&t=PzIVoLd HTTP/1.1" 200 -
+02:44:52 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:44:52] "GET /api/rules HTTP/1.1" 200 -
+02:44:52 [agent.web         ] INFO  WebSocket 客户端连接
+02:44:52 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:44:52] "POST /socket.io/?EIO=4&transport=polling&t=PzIVoMd&sid=JXyL4c368scdE9pvAAAA HTTP/1.1" 200 -
+02:44:52 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:44:52] "GET /socket.io/?EIO=4&transport=polling&t=PzIVoMe&sid=JXyL4c368scdE9pvAAAA HTTP/1.1" 200 -
+02:44:52 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:44:52] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+02:44:52 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:44:52] "GET /socket.io/?EIO=4&transport=polling&t=PzIVoMk&sid=JXyL4c368scdE9pvAAAA HTTP/1.1" 200 -
+02:44:57 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:44:57] "GET /api/status HTTP/1.1" 200 -
+02:45:02 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:45:02] "GET /api/status HTTP/1.1" 200 -
+02:45:07 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:45:07] "GET /api/status HTTP/1.1" 200 -
+02:45:12 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:45:12] "GET /api/status HTTP/1.1" 200 -
+02:45:17 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:45:17] "GET /api/status HTTP/1.1" 200 -
+02:45:22 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:45:22] "GET /api/status HTTP/1.1" 200 -
+02:45:22 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:45:22] "GET /api/rules HTTP/1.1" 200 -
+02:45:27 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:45:27] "GET /api/status HTTP/1.1" 200 -
+02:45:32 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:45:32] "GET /api/status HTTP/1.1" 200 -
+02:45:37 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:45:37] "GET /api/status HTTP/1.1" 200 -
+02:45:42 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:45:42] "GET /api/status HTTP/1.1" 200 -
+02:45:47 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:45:47] "GET /api/status HTTP/1.1" 200 -
+02:45:52 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:45:52] "GET /api/status HTTP/1.1" 200 -
+02:45:52 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:45:52] "GET /api/rules HTTP/1.1" 200 -
+02:45:57 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:45:57] "GET /api/status HTTP/1.1" 200 -
+02:46:02 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:46:02] "GET /api/status HTTP/1.1" 200 -
+02:46:07 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:46:07] "GET /api/status HTTP/1.1" 200 -
+02:46:12 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:46:12] "GET /api/status HTTP/1.1" 200 -
+02:46:17 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:46:17] "GET /api/status HTTP/1.1" 200 -
+02:46:22 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:46:22] "GET /api/status HTTP/1.1" 200 -
+02:46:22 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:46:22] "GET /api/rules HTTP/1.1" 200 -
+02:46:27 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:46:27] "GET /api/status HTTP/1.1" 200 -
+02:46:32 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:46:32] "GET /api/status HTTP/1.1" 200 -
+02:46:37 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:46:37] "GET /api/status HTTP/1.1" 200 -
+02:46:42 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:46:42] "GET /api/status HTTP/1.1" 200 -
+02:46:47 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:46:47] "GET /api/status HTTP/1.1" 200 -
+02:46:52 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:46:52] "GET /api/status HTTP/1.1" 200 -
+02:46:52 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:46:52] "GET /api/rules HTTP/1.1" 200 -
+02:46:57 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:46:57] "GET /api/status HTTP/1.1" 200 -
+02:47:22 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:47:22] "GET /api/rules HTTP/1.1" 200 -
+02:47:52 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:47:52] "GET /api/rules HTTP/1.1" 200 -
+02:47:53 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:47:53] "GET /api/status HTTP/1.1" 200 -
+02:48:53 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:48:53] "GET /api/status HTTP/1.1" 200 -
+02:48:53 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:48:53] "GET /api/rules HTTP/1.1" 200 -
+02:49:53 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:49:53] "GET /api/status HTTP/1.1" 200 -
+02:49:53 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:49:53] "GET /api/rules HTTP/1.1" 200 -
+02:50:53 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:50:53] "GET /api/status HTTP/1.1" 200 -
+02:50:53 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:50:53] "GET /api/rules HTTP/1.1" 200 -
+02:51:50 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:51:50] "GET /api/status HTTP/1.1" 200 -
+02:51:50 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:51:50] "GET /api/rules HTTP/1.1" 200 -
+02:51:51 [agent.web         ] INFO  WebSocket 客户端断开
+02:51:51 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:51:51] "GET /socket.io/?EIO=4&transport=websocket&sid=JXyL4c368scdE9pvAAAA HTTP/1.1" 200 -
+02:51:51 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:51:51] "GET / HTTP/1.1" 200 -
+02:51:51 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:51:51] "GET /socket.io/?EIO=4&transport=polling&t=PzIXOk7 HTTP/1.1" 200 -
+02:51:51 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:51:51] "GET /api/rules HTTP/1.1" 200 -
+02:51:51 [agent.web         ] INFO  WebSocket 客户端连接
+02:51:51 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:51:51] "POST /socket.io/?EIO=4&transport=polling&t=PzIXOkB&sid=IWpd7s27RM7SZYZwAAAC HTTP/1.1" 200 -
+02:51:51 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:51:51] "GET /socket.io/?EIO=4&transport=polling&t=PzIXOkC&sid=IWpd7s27RM7SZYZwAAAC HTTP/1.1" 200 -
+02:51:51 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:51:51] "GET /socket.io/?EIO=4&transport=polling&t=PzIXOkG&sid=IWpd7s27RM7SZYZwAAAC HTTP/1.1" 200 -
+02:51:56 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:51:56] "GET /api/status HTTP/1.1" 200 -
+02:52:01 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:52:01] "GET /api/status HTTP/1.1" 200 -
+02:52:06 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:52:06] "GET /api/status HTTP/1.1" 200 -
+02:52:11 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:52:11] "GET /api/status HTTP/1.1" 200 -
+02:52:16 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:52:16] "GET /api/status HTTP/1.1" 200 -
+02:52:21 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:52:21] "GET /api/status HTTP/1.1" 200 -
+02:52:21 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:52:21] "GET /api/rules HTTP/1.1" 200 -
+02:52:27 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:52:27] "GET /api/status HTTP/1.1" 200 -
+02:52:32 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:52:32] "GET /api/status HTTP/1.1" 200 -
+02:52:37 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:52:37] "GET /api/status HTTP/1.1" 200 -
+02:52:42 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:52:42] "GET /api/status HTTP/1.1" 200 -
+02:52:47 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:52:47] "GET /api/status HTTP/1.1" 200 -
+02:52:52 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:52:52] "GET /api/status HTTP/1.1" 200 -
+02:52:52 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:52:52] "GET /api/rules HTTP/1.1" 200 -
+02:52:57 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:52:57] "GET /api/status HTTP/1.1" 200 -
+02:53:02 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:53:02] "GET /api/status HTTP/1.1" 200 -
+02:53:07 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:53:07] "GET /api/status HTTP/1.1" 200 -
+02:53:12 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:53:12] "GET /api/status HTTP/1.1" 200 -
+02:53:17 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:53:17] "GET /api/status HTTP/1.1" 200 -
+02:53:22 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:53:22] "GET /api/status HTTP/1.1" 200 -
+02:53:22 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:53:22] "GET /api/rules HTTP/1.1" 200 -
+02:53:27 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:53:27] "GET /api/status HTTP/1.1" 200 -
+02:53:32 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:53:32] "GET /api/status HTTP/1.1" 200 -
+02:53:37 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:53:37] "GET /api/status HTTP/1.1" 200 -
+02:53:52 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:53:52] "GET /api/rules HTTP/1.1" 200 -
+02:53:53 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:53:53] "GET /api/status HTTP/1.1" 200 -
+02:54:22 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:54:22] "GET /api/rules HTTP/1.1" 200 -
+02:54:52 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:54:52] "GET /api/rules HTTP/1.1" 200 -
+02:54:53 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:54:53] "GET /api/status HTTP/1.1" 200 -
+02:55:48 [agent.mqtt        ] WARNING MQTT 断开: rc=7
+02:55:49 [agent.mqtt        ] INFO  MQTT 连接成功
+02:55:49 [agent.mqtt        ] INFO  订阅: edge/+/sensor/report
+02:55:49 [agent.mqtt        ] INFO  订阅: edge/+/actuator/status
+02:55:49 [agent.mqtt        ] INFO  订阅: edge/+/tool/result
+02:55:49 [agent.mqtt        ] INFO  订阅: edge/+/heartbeat
+02:55:53 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:55:53] "GET /api/status HTTP/1.1" 200 -
+02:55:53 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:55:53] "GET /api/rules HTTP/1.1" 200 -
+02:55:54 [agent.mqtt        ] INFO  断开 MQTT...
+02:55:54 [agent.mqtt        ] WARNING MQTT 断开: rc=0
+02:55:54 [agent.main        ] INFO  Agent 已停止
+02:55:57 [agent.core        ] INFO  Agent 初始化完成, model=deepseek-chat
+02:55:57 [agent.automation  ] INFO  规则文件不存在, 从空开始
+02:55:57 [agent.mqtt        ] INFO  注册事件处理器: sensor.report
+02:55:57 [agent.mqtt        ] INFO  注册事件处理器: tool.result
+02:55:57 [agent.mqtt        ] INFO  注册事件处理器: heartbeat
+02:55:57 [agent.mqtt        ] INFO  注册事件处理器: device.register
+02:55:57 [agent.mqtt        ] INFO  连接 MQTT Broker: 192.168.211.1:1883
+02:56:02 [agent.mqtt        ] ERROR MQTT 连接超时
+02:56:02 [agent.main        ] INFO  Agent 初始化完成
+02:56:02 [agent.main        ] INFO  自动化引擎启动 (间隔=10s)
+02:56:02 [agent.main        ] INFO  主动巡检启动 (间隔=300s)
+02:56:03 [agent.main        ] INFO  Web Dashboard: http://0.0.0.0:5000
+02:56:03 [werkzeug          ] INFO  [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.8.176:5000
+02:56:03 [werkzeug          ] INFO  [33mPress CTRL+C to quit[0m
+02:56:03 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:56:03] "GET /socket.io/?EIO=4&transport=polling&t=PzIYLhn HTTP/1.1" 200 -
+02:56:03 [agent.web         ] INFO  WebSocket 客户端连接
+02:56:03 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:56:03] "POST /socket.io/?EIO=4&transport=polling&t=PzIYMBf&sid=CCMKpBTWrEAoaLReAAAA HTTP/1.1" 200 -
+02:56:03 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:56:03] "GET /socket.io/?EIO=4&transport=polling&t=PzIYMBg&sid=CCMKpBTWrEAoaLReAAAA HTTP/1.1" 200 -
+02:56:09 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:56:09] "GET /api/status HTTP/1.1" 200 -
+02:56:11 [agent.web         ] INFO  WebSocket 客户端断开
+02:56:11 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:56:11] "GET /socket.io/?EIO=4&transport=websocket&sid=CCMKpBTWrEAoaLReAAAA HTTP/1.1" 200 -
+02:56:11 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:56:11] "GET / HTTP/1.1" 200 -
+02:56:11 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:56:11] "GET /socket.io/?EIO=4&transport=polling&t=PzIYO5N HTTP/1.1" 200 -
+02:56:11 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:56:11] "GET /api/rules HTTP/1.1" 200 -
+02:56:11 [agent.web         ] INFO  WebSocket 客户端连接
+02:56:11 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:56:11] "POST /socket.io/?EIO=4&transport=polling&t=PzIYO5R&sid=TkMixWL0cvmLJhpXAAAC HTTP/1.1" 200 -
+02:56:11 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:56:11] "GET /socket.io/?EIO=4&transport=polling&t=PzIYO5S&sid=TkMixWL0cvmLJhpXAAAC HTTP/1.1" 200 -
+02:56:11 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:56:11] "GET /socket.io/?EIO=4&transport=polling&t=PzIYO5W&sid=TkMixWL0cvmLJhpXAAAC HTTP/1.1" 200 -
+02:56:16 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:56:16] "GET /api/status HTTP/1.1" 200 -
+02:56:21 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:56:21] "GET /api/status HTTP/1.1" 200 -
+02:56:26 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:56:26] "GET /api/status HTTP/1.1" 200 -
+02:56:28 [agent.web         ] INFO  WebSocket 客户端断开
+02:56:28 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:56:28] "GET /socket.io/?EIO=4&transport=websocket&sid=TkMixWL0cvmLJhpXAAAC HTTP/1.1" 200 -
+02:56:28 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:56:28] "GET / HTTP/1.1" 200 -
+02:56:28 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:56:28] "GET /socket.io/?EIO=4&transport=polling&t=PzIYSKL HTTP/1.1" 200 -
+02:56:28 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:56:28] "GET /api/rules HTTP/1.1" 200 -
+02:56:28 [agent.web         ] INFO  WebSocket 客户端连接
+02:56:28 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:56:28] "POST /socket.io/?EIO=4&transport=polling&t=PzIYSKQ&sid=XXl0dxfhh45rhczkAAAE HTTP/1.1" 200 -
+02:56:28 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:56:28] "GET /socket.io/?EIO=4&transport=polling&t=PzIYSKQ.0&sid=XXl0dxfhh45rhczkAAAE HTTP/1.1" 200 -
+02:56:28 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:56:28] "GET /socket.io/?EIO=4&transport=polling&t=PzIYSKU&sid=XXl0dxfhh45rhczkAAAE HTTP/1.1" 200 -
+02:56:33 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:56:33] "GET /api/status HTTP/1.1" 200 -
+02:56:38 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:56:38] "GET /api/status HTTP/1.1" 200 -
+02:56:43 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:56:43] "GET /api/status HTTP/1.1" 200 -
+02:56:48 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:56:48] "GET /api/status HTTP/1.1" 200 -
+02:56:53 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:56:53] "GET /api/status HTTP/1.1" 200 -
+02:56:58 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:56:58] "GET /api/status HTTP/1.1" 200 -
+02:56:58 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:56:58] "GET /api/rules HTTP/1.1" 200 -
+02:57:03 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:57:03] "GET /api/status HTTP/1.1" 200 -
+02:57:08 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:57:08] "GET /api/status HTTP/1.1" 200 -
+02:57:13 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:57:13] "GET /api/status HTTP/1.1" 200 -
+02:57:18 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:57:18] "GET /api/status HTTP/1.1" 200 -
+02:57:24 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:57:24] "GET /api/status HTTP/1.1" 200 -
+02:57:29 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:57:29] "GET /api/status HTTP/1.1" 200 -
+02:57:29 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:57:29] "GET /api/rules HTTP/1.1" 200 -
+02:57:34 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:57:34] "GET /api/status HTTP/1.1" 200 -
+02:57:39 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:57:39] "GET /api/status HTTP/1.1" 200 -
+02:57:44 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:57:44] "GET /api/status HTTP/1.1" 200 -
+02:57:49 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:57:49] "GET /api/status HTTP/1.1" 200 -
+02:57:54 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:57:54] "GET /api/status HTTP/1.1" 200 -
+02:57:59 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:57:59] "GET /api/status HTTP/1.1" 200 -
+02:57:59 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:57:59] "GET /api/rules HTTP/1.1" 200 -
+02:58:04 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:58:04] "GET /api/status HTTP/1.1" 200 -
+02:58:09 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:58:09] "GET /api/status HTTP/1.1" 200 -
+02:58:14 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:58:14] "GET /api/status HTTP/1.1" 200 -
+02:58:29 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:58:29] "GET /api/rules HTTP/1.1" 200 -
+02:58:53 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:58:53] "GET /api/status HTTP/1.1" 200 -
+02:58:59 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:58:59] "GET /api/status HTTP/1.1" 200 -
+02:58:59 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:58:59] "GET /api/rules HTTP/1.1" 200 -
+02:59:04 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:59:04] "GET /api/status HTTP/1.1" 200 -
+02:59:09 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:59:09] "GET /api/status HTTP/1.1" 200 -
+02:59:14 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:59:14] "GET /api/status HTTP/1.1" 200 -
+02:59:19 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:59:19] "GET /api/status HTTP/1.1" 200 -
+02:59:24 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:59:24] "GET /api/status HTTP/1.1" 200 -
+02:59:29 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:59:29] "GET /api/status HTTP/1.1" 200 -
+02:59:29 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:59:29] "GET /api/rules HTTP/1.1" 200 -
+02:59:34 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:59:34] "GET /api/status HTTP/1.1" 200 -
+02:59:39 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:59:39] "GET /api/status HTTP/1.1" 200 -
+02:59:44 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:59:44] "GET /api/status HTTP/1.1" 200 -
+02:59:49 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:59:49] "GET /api/status HTTP/1.1" 200 -
+02:59:54 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 02:59:54] "GET /api/status HTTP/1.1" 200 -
+03:00:53 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:00:53] "GET /api/status HTTP/1.1" 200 -
+03:00:53 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:00:53] "GET /api/rules HTTP/1.1" 200 -
+03:01:53 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:01:53] "GET /api/status HTTP/1.1" 200 -
+03:01:53 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:01:53] "GET /api/rules HTTP/1.1" 200 -
+03:02:53 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:02:53] "GET /api/status HTTP/1.1" 200 -
+03:02:53 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:02:53] "GET /api/rules HTTP/1.1" 200 -
+03:03:08 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:03:08] "GET /api/status HTTP/1.1" 200 -
+03:03:08 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:03:08] "GET /api/rules HTTP/1.1" 200 -
+03:03:14 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:03:14] "GET /api/status HTTP/1.1" 200 -
+03:03:19 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:03:19] "GET /api/status HTTP/1.1" 200 -
+03:03:24 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:03:24] "GET /api/status HTTP/1.1" 200 -
+03:03:29 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:03:29] "GET /api/status HTTP/1.1" 200 -
+03:03:29 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:03:29] "GET /api/rules HTTP/1.1" 200 -
+03:03:34 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:03:34] "GET /api/status HTTP/1.1" 200 -
+03:03:39 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:03:39] "GET /api/status HTTP/1.1" 200 -
+03:03:44 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:03:44] "GET /api/status HTTP/1.1" 200 -
+03:03:49 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:03:49] "GET /api/status HTTP/1.1" 200 -
+03:03:54 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:03:54] "GET /api/status HTTP/1.1" 200 -
+03:03:59 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:03:59] "GET /api/status HTTP/1.1" 200 -
+03:03:59 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:03:59] "GET /api/rules HTTP/1.1" 200 -
+03:04:04 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:04:04] "GET /api/status HTTP/1.1" 200 -
+03:04:09 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:04:09] "GET /api/status HTTP/1.1" 200 -
+03:04:53 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:04:53] "GET /api/status HTTP/1.1" 200 -
+03:04:53 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:04:53] "GET /api/rules HTTP/1.1" 200 -
+03:05:31 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:05:31] "GET /api/status HTTP/1.1" 200 -
+03:05:31 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:05:31] "GET /api/rules HTTP/1.1" 200 -
+03:05:32 [agent.web         ] INFO  WebSocket 客户端断开
+03:05:32 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:05:32] "GET /socket.io/?EIO=4&transport=websocket&sid=XXl0dxfhh45rhczkAAAE HTTP/1.1" 200 -
+03:05:32 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:05:32] "GET / HTTP/1.1" 200 -
+03:05:32 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:05:32] "GET /socket.io/?EIO=4&transport=polling&t=PzIaXDJ HTTP/1.1" 200 -
+03:05:32 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:05:32] "GET /api/rules HTTP/1.1" 200 -
+03:05:32 [agent.web         ] INFO  WebSocket 客户端连接
+03:05:32 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:05:32] "POST /socket.io/?EIO=4&transport=polling&t=PzIaXDO&sid=sxJ_lipVMSPAAAldAAAG HTTP/1.1" 200 -
+03:05:32 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:05:32] "GET /socket.io/?EIO=4&transport=polling&t=PzIaXDQ&sid=sxJ_lipVMSPAAAldAAAG HTTP/1.1" 200 -
+03:05:32 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:05:32] "GET /socket.io/?EIO=4&transport=polling&t=PzIaXDU&sid=sxJ_lipVMSPAAAldAAAG HTTP/1.1" 200 -
+03:05:37 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:05:37] "GET /api/status HTTP/1.1" 200 -
+03:05:42 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:05:42] "GET /api/status HTTP/1.1" 200 -
+03:05:47 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:05:47] "GET /api/status HTTP/1.1" 200 -
+03:05:52 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:05:52] "GET /api/status HTTP/1.1" 200 -
+03:05:57 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:05:57] "GET /api/status HTTP/1.1" 200 -
+03:06:02 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:06:02] "GET /api/status HTTP/1.1" 200 -
+03:06:02 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:06:02] "GET /api/rules HTTP/1.1" 200 -
+03:06:07 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:06:07] "GET /api/status HTTP/1.1" 200 -
+03:06:12 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:06:12] "GET /api/status HTTP/1.1" 200 -
+03:06:17 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:06:17] "GET /api/status HTTP/1.1" 200 -
+03:06:22 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:06:22] "GET /api/status HTTP/1.1" 200 -
+03:06:25 [agent.mqtt        ] INFO  MQTT 连接成功
+03:06:25 [agent.mqtt        ] INFO  订阅: edge/+/sensor/report
+03:06:25 [agent.mqtt        ] INFO  订阅: edge/+/actuator/status
+03:06:25 [agent.mqtt        ] INFO  订阅: edge/+/tool/result
+03:06:25 [agent.mqtt        ] INFO  订阅: edge/+/heartbeat
+03:06:27 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:06:27] "GET /api/status HTTP/1.1" 200 -
+03:06:32 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:06:32] "GET /api/status HTTP/1.1" 200 -
+03:06:32 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:06:32] "GET /api/rules HTTP/1.1" 200 -
+03:06:37 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:06:37] "GET /api/status HTTP/1.1" 200 -
+03:06:42 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:06:42] "GET /api/status HTTP/1.1" 200 -
+03:06:47 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:06:47] "GET /api/status HTTP/1.1" 200 -
+03:06:52 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:06:52] "GET /api/status HTTP/1.1" 200 -
+03:06:57 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:06:57] "GET /api/status HTTP/1.1" 200 -
+03:07:02 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:07:02] "GET /api/status HTTP/1.1" 200 -
+03:07:02 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:07:02] "GET /api/rules HTTP/1.1" 200 -
+03:07:07 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:07:07] "GET /api/status HTTP/1.1" 200 -
+03:07:12 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:07:12] "GET /api/status HTTP/1.1" 200 -
+03:07:17 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:07:17] "GET /api/status HTTP/1.1" 200 -
+03:07:18 [agent.web         ] INFO  WebSocket 客户端断开
+03:07:18 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:07:18] "GET /socket.io/?EIO=4&transport=websocket&sid=sxJ_lipVMSPAAAldAAAG HTTP/1.1" 200 -
+03:07:18 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:07:18] "GET / HTTP/1.1" 200 -
+03:07:18 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:07:18] "GET /socket.io/?EIO=4&transport=polling&t=PzIax2f HTTP/1.1" 200 -
+03:07:18 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:07:18] "GET /api/rules HTTP/1.1" 200 -
+03:07:18 [agent.web         ] INFO  WebSocket 客户端连接
+03:07:18 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:07:18] "POST /socket.io/?EIO=4&transport=polling&t=PzIax2j&sid=WYKid3zlGNMWvQziAAAI HTTP/1.1" 200 -
+03:07:18 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:07:18] "GET /socket.io/?EIO=4&transport=polling&t=PzIax2k&sid=WYKid3zlGNMWvQziAAAI HTTP/1.1" 200 -
+03:07:18 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:07:18] "GET /socket.io/?EIO=4&transport=polling&t=PzIax2o&sid=WYKid3zlGNMWvQziAAAI HTTP/1.1" 200 -
+03:07:23 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:07:23] "GET /api/status HTTP/1.1" 200 -
+03:07:26 [agent.web         ] INFO  WebSocket 客户端断开
+03:07:26 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:07:26] "GET /socket.io/?EIO=4&transport=websocket&sid=WYKid3zlGNMWvQziAAAI HTTP/1.1" 200 -
+03:07:26 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:07:26] "GET / HTTP/1.1" 200 -
+03:07:26 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:07:26] "GET /socket.io/?EIO=4&transport=polling&t=PzIaz0c HTTP/1.1" 200 -
+03:07:26 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:07:26] "GET /api/rules HTTP/1.1" 200 -
+03:07:26 [agent.web         ] INFO  WebSocket 客户端连接
+03:07:26 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:07:26] "POST /socket.io/?EIO=4&transport=polling&t=PzIaz0g&sid=I30DWUzkaaIpmoS0AAAK HTTP/1.1" 200 -
+03:07:26 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:07:26] "GET /socket.io/?EIO=4&transport=polling&t=PzIaz0g.0&sid=I30DWUzkaaIpmoS0AAAK HTTP/1.1" 200 -
+03:07:26 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:07:26] "GET /socket.io/?EIO=4&transport=polling&t=PzIaz0l&sid=I30DWUzkaaIpmoS0AAAK HTTP/1.1" 200 -
+03:07:31 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:07:31] "GET /api/status HTTP/1.1" 200 -
+03:07:36 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:07:36] "GET /api/status HTTP/1.1" 200 -
+03:07:41 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:07:41] "GET /api/status HTTP/1.1" 200 -
+03:07:46 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:07:46] "GET /api/status HTTP/1.1" 200 -
+03:07:51 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:07:51] "GET /api/status HTTP/1.1" 200 -
+03:07:56 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:07:56] "GET /api/status HTTP/1.1" 200 -
+03:07:56 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:07:56] "GET /api/rules HTTP/1.1" 200 -
+03:08:01 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:08:01] "GET /api/status HTTP/1.1" 200 -
+03:08:06 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:08:06] "GET /api/status HTTP/1.1" 200 -
+03:08:11 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:08:11] "GET /api/status HTTP/1.1" 200 -
+03:08:16 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:08:16] "GET /api/status HTTP/1.1" 200 -
+03:08:21 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:08:21] "GET /api/status HTTP/1.1" 200 -
+03:08:26 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:08:26] "GET /api/status HTTP/1.1" 200 -
+03:08:26 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:08:26] "GET /api/rules HTTP/1.1" 200 -
+03:08:31 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:08:31] "GET /api/status HTTP/1.1" 200 -
+03:08:36 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:08:36] "GET /api/status HTTP/1.1" 200 -
+03:08:41 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:08:41] "GET /api/status HTTP/1.1" 200 -
+03:08:46 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:08:46] "GET /api/status HTTP/1.1" 200 -
+03:08:51 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:08:51] "GET /api/status HTTP/1.1" 200 -
+03:08:56 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:08:56] "GET /api/status HTTP/1.1" 200 -
+03:08:56 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:08:56] "GET /api/rules HTTP/1.1" 200 -
+03:09:01 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:09:01] "GET /api/status HTTP/1.1" 200 -
+03:09:06 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:09:06] "GET /api/status HTTP/1.1" 200 -
+03:09:11 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:09:11] "GET /api/status HTTP/1.1" 200 -
+03:09:16 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:09:16] "GET /api/status HTTP/1.1" 200 -
+03:09:21 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:09:21] "GET /api/status HTTP/1.1" 200 -
+03:09:27 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:09:27] "GET /api/status HTTP/1.1" 200 -
+03:09:27 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:09:27] "GET /api/rules HTTP/1.1" 200 -
+03:09:32 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:09:32] "GET /api/status HTTP/1.1" 200 -
+03:09:37 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:09:37] "GET /api/status HTTP/1.1" 200 -
+03:09:42 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:09:42] "GET /api/status HTTP/1.1" 200 -
+03:09:47 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:09:47] "GET /api/status HTTP/1.1" 200 -
+03:09:52 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:09:52] "GET /api/status HTTP/1.1" 200 -
+03:09:57 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:09:57] "GET /api/status HTTP/1.1" 200 -
+03:09:57 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:09:57] "GET /api/rules HTTP/1.1" 200 -
+03:10:02 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:10:02] "GET /api/status HTTP/1.1" 200 -
+03:10:07 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:10:07] "GET /api/status HTTP/1.1" 200 -
+03:10:12 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:10:12] "GET /api/status HTTP/1.1" 200 -
+03:10:17 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:10:17] "GET /api/status HTTP/1.1" 200 -
+03:10:22 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:10:22] "GET /api/status HTTP/1.1" 200 -
+03:10:27 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:10:27] "GET /api/rules HTTP/1.1" 200 -
+03:10:53 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:10:53] "GET /api/status HTTP/1.1" 200 -
+03:11:36 [agent.mqtt        ] WARNING MQTT 断开: rc=7
+03:11:53 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:11:53] "GET /api/status HTTP/1.1" 200 -
+03:11:53 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:11:53] "GET /api/rules HTTP/1.1" 200 -
+03:12:53 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:12:53] "GET /api/status HTTP/1.1" 200 -
+03:12:53 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:12:53] "GET /api/rules HTTP/1.1" 200 -
+03:13:32 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:13:32] "GET /api/status HTTP/1.1" 200 -
+03:13:32 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:13:32] "GET /api/rules HTTP/1.1" 200 -
+03:13:36 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:13:36] "GET /api/status HTTP/1.1" 200 -
+03:13:41 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:13:41] "GET /api/status HTTP/1.1" 200 -
+03:13:46 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:13:46] "GET /api/status HTTP/1.1" 200 -
+03:13:51 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:13:51] "GET /api/status HTTP/1.1" 200 -
+03:13:56 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:13:56] "GET /api/status HTTP/1.1" 200 -
+03:13:56 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:13:56] "GET /api/rules HTTP/1.1" 200 -
+03:14:02 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:14:02] "GET /api/status HTTP/1.1" 200 -
+03:14:07 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:14:07] "GET /api/status HTTP/1.1" 200 -
+03:14:12 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:14:12] "GET /api/status HTTP/1.1" 200 -
+03:14:17 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:14:17] "GET /api/status HTTP/1.1" 200 -
+03:14:22 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:14:22] "GET /api/status HTTP/1.1" 200 -
+03:14:27 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:14:27] "GET /api/status HTTP/1.1" 200 -
+03:14:27 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:14:27] "GET /api/rules HTTP/1.1" 200 -
+03:14:32 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:14:32] "GET /api/status HTTP/1.1" 200 -
+03:14:37 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:14:37] "GET /api/status HTTP/1.1" 200 -
+03:14:42 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:14:42] "GET /api/status HTTP/1.1" 200 -
+03:14:47 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:14:47] "GET /api/status HTTP/1.1" 200 -
+03:14:52 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:14:52] "GET /api/status HTTP/1.1" 200 -
+03:14:57 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:14:57] "GET /api/status HTTP/1.1" 200 -
+03:14:57 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:14:57] "GET /api/rules HTTP/1.1" 200 -
+03:15:01 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:15:01] "GET /api/status HTTP/1.1" 200 -
+03:15:05 [agent.web         ] INFO  WebSocket 客户端断开
+03:15:05 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:15:05] "GET /socket.io/?EIO=4&transport=websocket&sid=I30DWUzkaaIpmoS0AAAK HTTP/1.1" 200 -
+03:16:43 [agent.core        ] INFO  Agent 初始化完成, model=deepseek-chat
+03:16:43 [agent.automation  ] INFO  规则文件不存在, 从空开始
+03:16:43 [agent.mqtt        ] INFO  注册事件处理器: sensor.report
+03:16:43 [agent.mqtt        ] INFO  注册事件处理器: tool.result
+03:16:43 [agent.mqtt        ] INFO  注册事件处理器: heartbeat
+03:16:43 [agent.mqtt        ] INFO  注册事件处理器: device.register
+03:16:43 [agent.mqtt        ] INFO  连接 MQTT Broker: 192.168.211.1:1883
+03:16:43 [agent.mqtt        ] INFO  MQTT 连接成功
+03:16:43 [agent.mqtt        ] INFO  订阅: edge/+/sensor/report
+03:16:43 [agent.mqtt        ] INFO  订阅: edge/+/actuator/status
+03:16:43 [agent.mqtt        ] INFO  订阅: edge/+/tool/result
+03:16:43 [agent.mqtt        ] INFO  订阅: edge/+/heartbeat
+03:16:43 [agent.mqtt        ] INFO  MQTT 已连接
+03:16:43 [agent.main        ] INFO  Agent 初始化完成
+03:16:43 [agent.main        ] INFO  自动化引擎启动 (间隔=10s)
+03:16:43 [agent.main        ] INFO  主动巡检启动 (间隔=300s)
+03:16:44 [agent.main        ] INFO  Web Dashboard: http://0.0.0.0:5000
+03:16:44 [werkzeug          ] INFO  [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.8.176:5000
+03:16:44 [werkzeug          ] INFO  [33mPress CTRL+C to quit[0m
+03:18:51 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:18:51] "GET / HTTP/1.1" 200 -
+03:18:51 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:18:51] "GET /socket.io/?EIO=4&transport=polling&t=PzIda9I HTTP/1.1" 200 -
+03:18:51 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:18:51] "GET /api/rules HTTP/1.1" 200 -
+03:18:51 [agent.web         ] INFO  WebSocket 客户端连接
+03:18:51 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:18:51] "POST /socket.io/?EIO=4&transport=polling&t=PzIdaAc&sid=6mgJYCrk_yI7bddqAAAA HTTP/1.1" 200 -
+03:18:51 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:18:51] "GET /socket.io/?EIO=4&transport=polling&t=PzIdaAd&sid=6mgJYCrk_yI7bddqAAAA HTTP/1.1" 200 -
+03:18:51 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:18:51] "GET /socket.io/?EIO=4&transport=polling&t=PzIdaAs&sid=6mgJYCrk_yI7bddqAAAA HTTP/1.1" 200 -
+03:18:51 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:18:51] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+03:18:56 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:18:56] "GET /api/status HTTP/1.1" 200 -
+03:19:01 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:19:01] "GET /api/status HTTP/1.1" 200 -
+03:19:06 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:19:06] "GET /api/status HTTP/1.1" 200 -
+03:19:11 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:19:11] "GET /api/status HTTP/1.1" 200 -
+03:19:16 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:19:16] "GET /api/status HTTP/1.1" 200 -
+03:19:21 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:19:21] "GET /api/status HTTP/1.1" 200 -
+03:19:21 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:19:21] "GET /api/rules HTTP/1.1" 200 -
+03:19:26 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:19:26] "GET /api/status HTTP/1.1" 200 -
+03:19:31 [agent.web         ] INFO  WebSocket 客户端断开
+03:19:31 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:19:31] "GET /socket.io/?EIO=4&transport=websocket&sid=6mgJYCrk_yI7bddqAAAA HTTP/1.1" 200 -
+03:19:31 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:19:31] "GET / HTTP/1.1" 200 -
+03:19:31 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:19:31] "GET /socket.io/?EIO=4&transport=polling&t=PzIdjuz HTTP/1.1" 200 -
+03:19:31 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:19:31] "GET /api/rules HTTP/1.1" 200 -
+03:19:31 [agent.web         ] INFO  WebSocket 客户端连接
+03:19:31 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:19:31] "POST /socket.io/?EIO=4&transport=polling&t=PzIdjv1&sid=Yp23CZu3sKBNtE1HAAAC HTTP/1.1" 200 -
+03:19:31 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:19:31] "GET /socket.io/?EIO=4&transport=polling&t=PzIdjv2&sid=Yp23CZu3sKBNtE1HAAAC HTTP/1.1" 200 -
+03:19:31 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:19:31] "GET /socket.io/?EIO=4&transport=polling&t=PzIdjv6&sid=Yp23CZu3sKBNtE1HAAAC HTTP/1.1" 200 -
+03:19:36 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:19:36] "GET /api/status HTTP/1.1" 200 -
+03:19:40 [agent.mqtt        ] WARNING 无效 JSON: b'{"status":"off'
+03:19:41 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:19:41] "GET /api/status HTTP/1.1" 200 -
+03:19:46 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:19:46] "GET /api/status HTTP/1.1" 200 -
+03:19:51 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:19:51] "GET /api/status HTTP/1.1" 200 -
+03:19:56 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:19:56] "GET /api/status HTTP/1.1" 200 -
+03:20:01 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:20:01] "GET /api/status HTTP/1.1" 200 -
+03:20:01 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:20:01] "GET /api/rules HTTP/1.1" 200 -
+03:20:06 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:20:06] "GET /api/status HTTP/1.1" 200 -
+03:20:11 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:20:11] "GET /api/status HTTP/1.1" 200 -
+03:20:16 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:20:16] "GET /api/status HTTP/1.1" 200 -
+03:20:21 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:20:21] "GET /api/status HTTP/1.1" 200 -
+03:20:26 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:20:26] "GET /api/status HTTP/1.1" 200 -
+03:20:31 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:20:31] "GET /api/status HTTP/1.1" 200 -
+03:20:31 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:20:31] "GET /api/rules HTTP/1.1" 200 -
+03:20:36 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:20:36] "GET /api/status HTTP/1.1" 200 -
+03:20:41 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:20:41] "GET /api/status HTTP/1.1" 200 -
+03:20:46 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:20:46] "GET /api/status HTTP/1.1" 200 -
+03:20:51 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:20:51] "GET /api/status HTTP/1.1" 200 -
+03:21:01 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:21:01] "GET /api/rules HTTP/1.1" 200 -
+03:21:13 [agent.mqtt        ] WARNING 无效 JSON: b'{"status":"off'
+03:21:31 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:21:31] "GET /api/rules HTTP/1.1" 200 -
+03:21:41 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:21:41] "GET /api/status HTTP/1.1" 200 -
+03:21:50 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:21:50] "GET /api/status HTTP/1.1" 200 -
+03:21:51 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:21:51] "GET /api/status HTTP/1.1" 200 -
+03:21:56 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:21:56] "GET /api/status HTTP/1.1" 200 -
+03:22:01 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:22:01] "GET /api/status HTTP/1.1" 200 -
+03:22:01 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:22:01] "GET /api/rules HTTP/1.1" 200 -
+03:22:06 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:22:06] "GET /api/status HTTP/1.1" 200 -
+03:22:11 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:22:11] "GET /api/status HTTP/1.1" 200 -
+03:22:16 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:22:16] "GET /api/status HTTP/1.1" 200 -
+03:22:21 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:22:21] "GET /api/status HTTP/1.1" 200 -
+03:22:26 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:22:26] "GET /api/status HTTP/1.1" 200 -
+03:22:31 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:22:31] "GET /api/status HTTP/1.1" 200 -
+03:22:31 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:22:31] "GET /api/rules HTTP/1.1" 200 -
+03:22:36 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:22:36] "GET /api/status HTTP/1.1" 200 -
+03:22:41 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:22:41] "GET /api/status HTTP/1.1" 200 -
+03:22:46 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:22:46] "GET /api/status HTTP/1.1" 200 -
+03:22:51 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:22:51] "GET /api/status HTTP/1.1" 200 -
+03:23:41 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:23:41] "GET /api/status HTTP/1.1" 200 -
+03:23:41 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:23:41] "GET /api/rules HTTP/1.1" 200 -
+03:24:41 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:24:41] "GET /api/status HTTP/1.1" 200 -
+03:24:41 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:24:41] "GET /api/rules HTTP/1.1" 200 -
+03:25:41 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:25:41] "GET /api/status HTTP/1.1" 200 -
+03:25:41 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:25:41] "GET /api/rules HTTP/1.1" 200 -
+03:26:41 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:26:41] "GET /api/status HTTP/1.1" 200 -
+03:26:41 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:26:41] "GET /api/rules HTTP/1.1" 200 -
+03:27:41 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:27:41] "GET /api/status HTTP/1.1" 200 -
+03:27:41 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:27:41] "GET /api/rules HTTP/1.1" 200 -
+03:28:41 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:28:41] "GET /api/status HTTP/1.1" 200 -
+03:28:41 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:28:41] "GET /api/rules HTTP/1.1" 200 -
+03:29:39 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:29:39] "GET /api/status HTTP/1.1" 200 -
+03:29:39 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:29:39] "GET /api/rules HTTP/1.1" 200 -
+03:30:36 [agent.mqtt        ] WARNING 无效 JSON: b'{"status":"off'
+03:30:39 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:30:39] "GET /api/status HTTP/1.1" 200 -
+03:30:39 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:30:39] "GET /api/rules HTTP/1.1" 200 -
+03:31:04 [agent.web         ] INFO  WebSocket 客户端断开
+03:31:04 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:31:04] "GET /socket.io/?EIO=4&transport=websocket&sid=Yp23CZu3sKBNtE1HAAAC HTTP/1.1" 200 -
+03:33:16 [agent.mqtt        ] WARNING MQTT 断开: rc=7

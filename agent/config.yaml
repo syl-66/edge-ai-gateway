@@ -1,0 +1,67 @@
+# ==============================================
+# Edge AI Agent Gateway — Agent 端配置
+# ==============================================
+
+# -------- MQTT Broker 连接 --------
+mqtt:
+  broker_host: "192.168.211.1"
+  broker_port: 1883
+  client_id: "ai-agent-master"
+  username: ""          # 如需认证填这里
+  password: ""
+  keepalive: 60
+  # 订阅的设备 Topic (支持通配符)
+  subscribe_topics:
+    - "edge/+/sensor/report"
+    - "edge/+/actuator/status"
+    - "edge/+/tool/result"
+    - "edge/+/heartbeat"
+
+# -------- LLM 配置 (支持 OpenAI / DeepSeek / 本地模型) --------
+llm:
+  provider: "deepseek"           # openai / deepseek / ollama / custom
+  model: "deepseek-chat"         # 模型名
+  api_key: "${DEEPSEEK_API_KEY}" # 从环境变量读取
+  api_base: "https://api.deepseek.com/v1"
+  temperature: 0.1               # 低温度 = 更确定性的 tool call
+  max_tokens: 2048
+  # 如果用本地 Ollama:
+  # provider: "ollama"
+  # model: "qwen2:7b"
+  # api_base: "http://localhost:11434/v1"
+  # api_key: "ollama"
+
+# -------- Agent 行为 --------
+agent:
+  name: "家居管家小智"
+  system_prompt: |
+    你是一个智能家居管家，负责管理用户的家庭设备。
+    你可以:
+    1. 读取传感器数据（温度、湿度等）
+    2. 控制设备（灯光、风扇、加湿器、红外家电）
+    3. 创建自动化规则（条件触发设备动作）
+    4. 查询外部信息（天气）
+
+    规则:
+    - 当用户说"热"或温度 > 28°C 时，建议开风扇
+    - 当湿度 < 30% 时，建议开加湿器
+    - 执行设备操作前，先向用户确认（除非是自动化规则触发）
+    - 自动化规则创建后，主动告知用户规则已生效
+    - 定时检查传感器数据，发现异常主动通知用户
+    - 回复简洁，用中文
+
+  max_context_messages: 20       # 保留最近 N 条对话
+  proactive_check_interval: 300  # 主动检查传感器间隔(秒)
+  automation_check_interval: 10  # 自动化规则轮询间隔(秒)
+
+# -------- Web Dashboard --------
+web:
+  host: "0.0.0.0"
+  port: 5000
+  debug: false
+  secret_key: "change-me-in-production"
+
+# -------- 日志 --------
+logging:
+  level: "INFO"   # DEBUG / INFO / WARNING / ERROR
+  file: "agent.log"

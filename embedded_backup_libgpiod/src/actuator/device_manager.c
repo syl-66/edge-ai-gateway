@@ -1,0 +1,36 @@
+/**
+ * device_manager.c — 执行器统一管理 (协调各子模块)
+ * 子模块初始化失败自动跳过, 不阻塞整体运行
+ */
+
+#define LOG_TAG "[actuator]"
+
+#include <string.h>
+#include "logging.h"
+#include "actuator/device_manager.h"
+#include "config.h"
+
+int device_manager_init(void) {
+    LOG_INFO("===== 执行器初始化 =====");
+
+    if (relay_control_init(RELAY_FAN_GPIO) < 0)
+        LOG_WARN("继电器不可用 (未连接 GPIO%d)", RELAY_FAN_GPIO);
+
+    if (ir_control_init(IR_TX_GPIO) < 0)
+        LOG_WARN("红外发射不可用 (未连接 GPIO%d)", IR_TX_GPIO);
+
+    LOG_INFO("===== 执行器初始化完成 =====");
+    return 0;
+}
+
+int device_get_all_status(device_status_t *status) {
+    memset(status, 0, sizeof(*status));
+    strncpy(status->ir_last_code, ir_get_last_code(), sizeof(status->ir_last_code)-1);
+    return 0;
+}
+
+void device_manager_cleanup(void) {
+    relay_control_cleanup();
+    ir_control_cleanup();
+    LOG_INFO("执行器已全部关闭");
+}
