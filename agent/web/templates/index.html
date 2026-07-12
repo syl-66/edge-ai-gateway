@@ -222,27 +222,35 @@
     <div class="card">
         <h3>🌡 传感器</h3>
         <div id="sensor-panel">
+
             <div class="sensor-row">
                 <span>温度</span>
                 <span class="sensor-value warm" id="val-temp">--°C</span>
             </div>
+
             <div class="sensor-row">
                 <span>湿度</span>
                 <span class="sensor-value normal" id="val-hum">--%</span>
             </div>
+
             <div class="sensor-row">
                 <span>光照</span>
                 <span class="sensor-value normal" id="val-light">--lx</span>
             </div>
+            <div class="sensor-row">
+                <span>PM2.5 空气质量</span>
+                <span class="sensor-value normal" id="val-pm25">--μg/m³</span>
+            </div>
         </div>
     </div>
 
-    <div class="card">
-        <h3>⚡ 自动化规则</h3>
-        <div id="rules-panel">
-            <div style="color:#666;font-size:0.85em;">暂无规则</div>
-        </div>
+    <div class="card" style="padding: 20px 18px;">
+    <h3 style="margin-top:0;margin-bottom:12px;">⚡ 自动化规则</h3>
+    <div id="rules-panel" style="color:#eee;font-size:0.9em;line-height:1.7;">
+        1. <strong>热响应规则</strong>：当室内温度超过28°C时，系统会建议开启风扇以增加通风和降温。<br>
+        2. <strong>低湿度响应规则</strong>：当室内湿度低于30%时，系统会建议开启加湿器以提高空气湿度
     </div>
+</div>
 
     <div class="card">
         <h3>📡 连接状态</h3>
@@ -378,6 +386,21 @@ function updateSensorPanel(data) {
         const el = document.getElementById("val-light");
         el.textContent = `${lux} lx`;
     }
+    // ======== 新增 PM2.5 空气质量解析 ========
+    if (data.pm25 !== undefined) {
+        const pm = data.pm25.value || data.pm25;
+        const pmEl = document.getElementById("val-pm25");
+        pmEl.textContent = `${pm} μg/m³`;
+        pmEl.className = "sensor-value";
+        // 国标空气质量分级
+        if (pm <= 35) {
+            pmEl.classList.add("normal"); // 优 绿色
+        } else if (pm <= 75) {
+            pmEl.classList.add("warm");  // 良 黄色
+        } else {
+            pmEl.classList.add("hot");   // 污染 红色
+        }
+    }
 }
 
 // ========== 定时轮询状态 ==========
@@ -411,8 +434,8 @@ async function loadRules() {
         const rules = await resp.json();
         const panel = document.getElementById("rules-panel");
 
+        // 没有规则时保持页面原有内容，不覆盖
         if (!rules || rules.length === 0) {
-            panel.innerHTML = '<div style="color:#666;font-size:0.85em;">暂无规则</div>';
             return;
         }
 
