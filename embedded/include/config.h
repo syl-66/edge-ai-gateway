@@ -59,7 +59,7 @@
 
 /* ========== UART 传感器配置 ========== */
 /* PMS5003 PM2.5 激光粉尘传感器 */
-#define UART_PMS5003        "/dev/ttyS2"  /* i.MX6ULL UART3 */
+#define UART_PMS5003        "/dev/ttymxc2"  /* i.MX6ULL UART3 */
 #define PMS5003_BAUDRATE    9600
 /* PMS5003 主动上报模式: 每 200~800ms 自动发一帧 32 字节 */
 
