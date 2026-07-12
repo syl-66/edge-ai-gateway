@@ -58,7 +58,7 @@ agent:
 web:
   host: "0.0.0.0"
   port: 5000
-  debug: false
+  debug: true
   secret_key: "change-me-in-production"
 
 # -------- 日志 --------
