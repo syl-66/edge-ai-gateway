@@ -240,16 +240,6 @@ python main.py
 
 ---
 
-## 面试能聊的核心点
-
-1. **为什么选 MQTT 而不是 HTTP？** — MQTT 发布/订阅模型解耦、QoS 级别、轻量级适合嵌入式
-2. **Agent 怎么保证指令可靠执行？** — 请求-响应确认 + 超时重试 + 设备心跳
-3. **多线程架构怎么设计的？** — 采集/处理/上报分离，消息队列通信，互斥锁保护共享资源
-4. **Agent Function Calling 怎么映射到硬件工具？** — LLM 输出 function_call → Agent 解析 → MQTT 下发 → 嵌入式端 tool_dispatcher 分发
-5. **怎么处理自然语言的歧义？** — System Prompt 约束 + 工具描述提供明确 schema + 必要时让 Agent 追问
-
----
-
 ## 后续可扩展方向
 
 - [ ] 接入更多传感器（PM2.5、CO₂、人体红外）
