@@ -12,7 +12,10 @@
 #include "actuator/relay_control.h"
 #include "actuator/led_control.h"
 #include "actuator/ir_control.h"
+<<<<<<< HEAD
 #include "actuator/fan_pwm.h"
+=======
+>>>>>>> temp-remote
 
 int device_manager_init(void) {
     LOG_INFO("===== 执行器初始化 =====");
@@ -20,9 +23,12 @@ int device_manager_init(void) {
     if (relay_control_init(RELAY_FAN_GPIO) < 0)
         LOG_WARN("继电器不可用 (未连接 GPIO%d)", RELAY_FAN_GPIO);
 
+<<<<<<< HEAD
     if (fan_pwm_init(FAN_PWM_CHIP, FAN_PWM_CHANNEL) < 0)
         LOG_WARN("风扇 PWM 不可用");
 
+=======
+>>>>>>> temp-remote
     if (led_control_init(LED_GPIO) < 0)
         LOG_WARN("LED 不可用 (未连接 GPIO%d)", LED_GPIO);
 
@@ -41,7 +47,10 @@ int device_get_all_status(device_status_t *status) {
 
 void device_manager_cleanup(void) {
     relay_control_cleanup();
+<<<<<<< HEAD
     fan_pwm_cleanup();
+=======
+>>>>>>> temp-remote
     led_control_cleanup();
     LOG_INFO("执行器已全部关闭");
 }

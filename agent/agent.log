@@ -1366,6 +1366,7 @@ openai.AuthenticationError: Error code: 401 - {'error': {'message': 'Authenticat
 03:31:04 [agent.web         ] INFO  WebSocket 客户端断开
 03:31:04 [werkzeug          ] INFO  127.0.0.1 - - [12/Jul/2026 03:31:04] "GET /socket.io/?EIO=4&transport=websocket&sid=Yp23CZu3sKBNtE1HAAAC HTTP/1.1" 200 -
 03:33:16 [agent.mqtt        ] WARNING MQTT 断开: rc=7
+<<<<<<< HEAD
 19:19:25 [agent.core        ] INFO  Agent 初始化完成, model=deepseek-chat
 19:19:25 [agent.automation  ] INFO  规则文件不存在, 从空开始
 19:19:25 [agent.mqtt        ] INFO  注册事件处理器: sensor.report
@@ -5921,3 +5922,5 @@ openai.NotFoundError: Error code: 404 - {'error': {'message': "model 'qwen2:1.5b
 00:46:57 [agent.mqtt        ] INFO  订阅: edge/+/actuator/status
 00:46:57 [agent.mqtt        ] INFO  订阅: edge/+/tool/result
 00:46:57 [agent.mqtt        ] INFO  订阅: edge/+/heartbeat
+=======
+>>>>>>> temp-remote

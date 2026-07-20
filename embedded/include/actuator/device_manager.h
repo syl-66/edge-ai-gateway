@@ -16,7 +16,10 @@
 #include "actuator/relay_control.h"
 #include "actuator/led_control.h"
 #include "actuator/ir_control.h"
+<<<<<<< HEAD
 #include "actuator/fan_pwm.h"
+=======
+>>>>>>> temp-remote
 
 typedef struct {
     int relay;             /* 继电器状态: 0=断开 1=吸合 */

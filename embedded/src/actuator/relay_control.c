@@ -19,9 +19,12 @@ int relay_control_init(int gpio_pin) {
     }
     g_relay_pin = gpio_pin;
     g_relay_ok = 1;
+<<<<<<< HEAD
     /* 初始拉高, 确保继电器默认断开 (兼容高低电平触发) */
     gpio_write_val(gpio_pin, 1);
     g_relay_state = 1;
+=======
+>>>>>>> temp-remote
     LOG_INFO("继电器就绪 (GPIO%d)", gpio_pin);
     return 0;
 }
@@ -29,14 +32,22 @@ int relay_control_init(int gpio_pin) {
 int device_relay_set(int id, int on) {
     (void)id;
     if (!g_relay_ok) return -1;
+<<<<<<< HEAD
     /* 低电平触发: on=1 → 写0(吸合), on=0 → 写1(断开) */
     int level = on ? 0 : 1;
     gpio_write_val(g_relay_pin, level);
+=======
+    gpio_write_val(g_relay_pin, on);
+>>>>>>> temp-remote
     g_relay_state = on;
     return 0;
 }
 
 void relay_control_cleanup(void) {
+<<<<<<< HEAD
     /* 拉高 GPIO 断开继电器 */
     if (g_relay_ok) { gpio_write_val(g_relay_pin, 1); g_relay_state = 0; }
+=======
+    if (g_relay_ok) { gpio_write_val(g_relay_pin, 0); g_relay_state = 0; }
+>>>>>>> temp-remote
 }

@@ -62,7 +62,10 @@ set(ACTUATOR_SOURCES
     src/actuator/device_manager.c # 统一管理 (协调层)
     src/actuator/gpio_util.c      # GPIO sysfs 基础操作
     src/actuator/relay_control.c  # 继电器控制
+<<<<<<< HEAD
     src/actuator/fan_pwm.c        # 风扇 PWM 调速
+=======
+>>>>>>> temp-remote
     src/actuator/led_control.c    # LED 灯控制
     src/actuator/ir_control.c     # NEC 红外发射
 )

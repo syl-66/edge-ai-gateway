@@ -7,7 +7,10 @@
 
 #include <stdio.h>
 #include <string.h>
+<<<<<<< HEAD
 #include <stdlib.h>
+=======
+>>>>>>> temp-remote
 #include "logging.h"
 #include "config.h"
 #include "tools/tool_handlers.h"
@@ -15,6 +18,7 @@
 #include "actuator/relay_control.h"
 #include "actuator/led_control.h"
 #include "actuator/ir_control.h"
+<<<<<<< HEAD
 #include "actuator/fan_pwm.h"
 #include "sensor/sensor_manager.h"
 
@@ -53,6 +57,21 @@ int tool_control_relay(const char *args, char *result, int len) {
         snprintf(result, len, "{\"success\":true,\"state\":\"off\",\"speed\":0}");
     }
 
+=======
+#include "sensor/sensor_manager.h"
+
+/* ============================================================
+ * handle: control_relay — 控制继电器风扇
+ * ============================================================ */
+
+int tool_control_relay(const char *args, char *result, int len) {
+    if (strstr(args, "on") || strstr(args, "1"))
+        device_relay_set(RELAY_FAN, 1);
+    else
+        device_relay_set(RELAY_FAN, 0);
+
+    snprintf(result, len, "{\"success\":true}");
+>>>>>>> temp-remote
     return 0;
 }
 

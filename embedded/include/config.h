@@ -31,11 +31,14 @@
 /* 继电器 (GPIO 控制, 经三极管驱动风扇) */
 #define RELAY_FAN_GPIO      5
 
+<<<<<<< HEAD
 /* 风扇 PWM 调速 (4线PC风扇蓝线, 25kHz)
  * 接线: GPIO1_IO08 → 风扇蓝线 (PWM1_OUT, pwmchip0) */
 #define FAN_PWM_CHIP        0   /* pwmchip0 = PWM1 */
 #define FAN_PWM_CHANNEL     0   /* channel 0 */
 
+=======
+>>>>>>> temp-remote
 /* IR 发射 (NEC 编码, GPIO bit-banging + 38kHz 载波) */
 #define IR_TX_GPIO          18
 
