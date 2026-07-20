@@ -1,0 +1,28 @@
+# Edge AI Agent Gateway — Python 依赖
+# 安装: pip install -r requirements.txt
+
+# -------- MQTT 通信 --------
+paho-mqtt>=1.6.0
+
+# -------- LLM Agent --------
+openai>=1.0.0           # OpenAI / DeepSeek API 兼容客户端
+# langchain>=0.1.0       # (可选) LangChain Agent 框架
+# langchain-community>=0.1.0  # (可选) MQTT/LangChain 集成
+
+# -------- Web 服务 --------
+flask>=3.0.0
+flask-socketio>=5.3.0   # WebSocket (实时推送设备状态)
+python-socketio>=5.11.0
+
+# -------- 工具库 --------
+pyyaml>=6.0
+requests>=2.31.0
+schedule>=1.2.0         # 定时任务调度
+colorlog>=6.8.0         # 彩色日志
+
+# -------- (可选) 本地推理 --------
+# ollama>=0.2.0
+# onnxruntime>=1.17.0
+
+# -------- NTP 时间同步 (生产环境) --------
+# ntplib>=0.4.0

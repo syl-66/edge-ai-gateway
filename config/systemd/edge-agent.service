@@ -1,0 +1,45 @@
+# Edge AI Agent Gateway — systemd 服务文件
+#
+# 安装:
+#   sudo cp edge-agent.service /etc/systemd/system/
+#   sudo systemctl daemon-reload
+#   sudo systemctl enable edge-agent
+#   sudo systemctl start edge-agent
+#
+# 查看日志:
+#   journalctl -u edge-agent -f
+
+# =============================================
+# 嵌入式设备端服务 (i.MX6ULL)
+# =============================================
+[Unit]
+Description=Edge AI Agent Gateway - Device
+Documentation=https://github.com/yourname/edge-ai-agent-gateway
+After=network.target mosquitto.service
+Wants=network.target mosquitto.service
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/usr/local/bin
+ExecStart=/usr/local/bin/edge_gateway
+
+# 自动重启
+Restart=always
+RestartSec=10
+
+# 日志
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=edge-gateway
+
+# 资源限制 (嵌入式设备资源受限, 适当限制)
+# MemoryLimit=64M
+# CPUQuota=50%
+
+# 环境变量
+Environment=MQTT_HOST=192.168.1.50
+Environment=DEVICE_ID=imx6ull-gateway-001
+
+[Install]
+WantedBy=multi-user.target
